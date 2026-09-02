@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this frozen six-issuer filing comparison, cite the Zenodo dataset."
+type: dataset
+title: "AI Infrastructure Filing Cross-Section: 2026 Q2 Evidence Note"
+version: 1.0.0
+date-released: 2026-09-01
+doi: 10.5281/zenodo.22239714
+authors:
+  - name: AhaSignals
+license: CC-BY-4.0
+url: "https://ahasignals.com/research/ai-infrastructure-filing-cross-section-2026-q2/"
+repository-code: "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section"
+abstract: "A frozen, source-dated comparison of revenue growth, gross margin, research-and-development intensity and diluted-share change across three role-matched pairs of U.S.-listed AI-infrastructure issuers."
+keywords:
+  - point-in-time financial data
+  - SEC filings
+  - AI infrastructure
+  - cross-sectional research
+  - diluted shares
+preferred-citation:
+  type: dataset
+  authors:
+    - name: AhaSignals
+  title: "AI Infrastructure Filing Cross-Section: 2026 Q2 Evidence Note"
+  version: 1.0.0
+  year: 2026
+  doi: 10.5281/zenodo.22239714
+  url: "https://doi.org/10.5281/zenodo.22239714"

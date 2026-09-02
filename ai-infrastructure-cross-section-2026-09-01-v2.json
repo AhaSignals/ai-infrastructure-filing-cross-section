@@ -1,0 +1,2016 @@
+{
+  "schemaVersion": "2.1.0",
+  "id": "ahasignals-ai-infrastructure-filing-cross-section",
+  "version": "2.0.0",
+  "releaseId": "ai-infrastructure-cross-section-2026-09-01-v2",
+  "releaseUrl": "https://ahasignals.com/data/filing-delta/cross-section/releases/ai-infrastructure-cross-section-2026-09-01-v2.json",
+  "csvUrl": "https://ahasignals.com/data/filing-delta/cross-section/releases/ai-infrastructure-cross-section-2026-09-01-v2.csv",
+  "publishedAt": "2026-09-01",
+  "knowledgeCutoff": "2026-09-01T00:00:00.000Z",
+  "immutable": true,
+  "license": "CC BY 4.0",
+  "methodologyUrl": "https://ahasignals.com/methodology/filing-derived-features/",
+  "citation": "AhaSignals. “AI Infrastructure Filing Cross-Section: Six-Issuer Quarterly Filing Features.” ai-infrastructure-cross-section-2026-09-01-v2, version 2.0.0, knowledge cutoff 2026-09-01T00:00:00.000Z. https://ahasignals.com/data/filing-delta/cross-section/releases/ai-infrastructure-cross-section-2026-09-01-v2.json",
+  "metricDefinitions": [
+    {
+      "id": "revenueGrowth",
+      "label": "Quarterly revenue growth",
+      "definition": "(current quarter revenue ÷ prior-year comparable quarter revenue) − 1"
+    },
+    {
+      "id": "grossMargin",
+      "label": "Quarterly gross margin",
+      "definition": "current quarter gross profit ÷ current quarter revenue"
+    },
+    {
+      "id": "rdIntensity",
+      "label": "Quarterly R&D intensity",
+      "definition": "current quarter research and development expense ÷ current quarter revenue"
+    },
+    {
+      "id": "dilutedShareChange",
+      "label": "Diluted share change",
+      "definition": "(current quarter diluted weighted-average shares ÷ prior-year comparable quarter shares) − 1"
+    }
+  ],
+  "comparabilityPolicy": {
+    "tierA": "Quarterly formula and filed-source status are comparable. Fiscal-quarter end dates may differ, so values are not a synchronized calendar-quarter ranking.",
+    "tierB": "The formula is comparable but a disclosed source or measurement-window exception prevents strict ranking.",
+    "tierC": "The measurement window differs from the main cohort. Keep for issuer context only."
+  },
+  "rows": [
+    {
+      "id": "nvidia",
+      "company": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "cik": "0001045810",
+      "role": "Compute accelerators",
+      "pair": "compute",
+      "fiscalPeriod": "FY2027 Q2",
+      "periodEnded": "2026-07-26",
+      "filedAt": "2026-08-26",
+      "acceptedAt": "2026-08-26T20:36:00.000Z",
+      "accession": "0001045810-26-000075",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 37,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 1.0585114348672526,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 96221000000,
+              "previous": 46743000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.7497531723844068,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 72142000000,
+              "previous": 33853000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 96221000000,
+              "previous": 46743000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.07331040001662839,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 7054000000,
+              "previous": 4291000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 96221000000,
+              "previous": 46743000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": -0.010068481982716482,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 24285000000,
+              "previous": 24532000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 1.0585114348672526,
+      "grossMargin": 0.7497531723844068,
+      "rdIntensity": 0.07331040001662839,
+      "dilutedShareChange": -0.010068481982716482,
+      "pageUrl": "https://ahasignals.com/filing-delta/nvidia/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    {
+      "id": "amd",
+      "company": "Advanced Micro Devices, Inc.",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "role": "Compute accelerators",
+      "pair": "compute",
+      "fiscalPeriod": "FY2026 Q2",
+      "periodEnded": "2026-06-27",
+      "filedAt": "2026-08-05",
+      "acceptedAt": "2026-08-04T21:40:01.000Z",
+      "accession": "0000002488-26-000123",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 66,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.5011060507482108,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11536000000,
+              "previous": 7685000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.5377080443828016,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 6203000000,
+              "previous": 3059000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11536000000,
+              "previous": 7685000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.21914008321775313,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 2528000000,
+              "previous": 1894000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11536000000,
+              "previous": 7685000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.017791411042944683,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 1659000000,
+              "previous": 1630000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.5011060507482108,
+      "grossMargin": 0.5377080443828016,
+      "rdIntensity": 0.21914008321775313,
+      "dilutedShareChange": 0.017791411042944683,
+      "pageUrl": "https://ahasignals.com/filing-delta/amd/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm"
+    },
+    {
+      "id": "arista-networks",
+      "company": "Arista Networks, Inc.",
+      "ticker": "ANET",
+      "cik": "0001596532",
+      "role": "AI networking systems",
+      "pair": "networking",
+      "fiscalPeriod": "FY2026 Q2",
+      "periodEnded": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "acceptedAt": "2026-08-04T22:08:09.000Z",
+      "accession": "0001596532-26-000175",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 63,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.3768595791001452,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 3035700000,
+              "previous": 2204800000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.6292782554270844,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 1910300000,
+              "previous": 1438600000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 3035700000,
+              "previous": 2204800000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.11470171624337056,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 348200000,
+              "previous": 296500000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 3035700000,
+              "previous": 2204800000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.0037759597230961894,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 1276000000,
+              "previous": 1271200000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.3768595791001452,
+      "grossMargin": 0.6292782554270844,
+      "rdIntensity": 0.11470171624337056,
+      "dilutedShareChange": 0.0037759597230961894,
+      "pageUrl": "https://ahasignals.com/filing-delta/arista-networks/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm"
+    },
+    {
+      "id": "marvell",
+      "company": "Marvell Technology, Inc.",
+      "ticker": "MRVL",
+      "cik": "0001835632",
+      "role": "Network and interconnect silicon",
+      "pair": "networking",
+      "fiscalPeriod": "FY2027 Q2",
+      "periodEnded": "2026-08-01",
+      "filedAt": "2026-08-28",
+      "acceptedAt": "2026-08-28T20:04:02.000Z",
+      "accession": "0001835632-26-000025",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 31,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.3654852699267235,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 2739300000,
+              "previous": 2006100000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.5313766290658197,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 1455600000,
+              "previous": 1010600000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 2739300000,
+              "previous": 2006100000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.27054356952506114,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 741100000,
+              "previous": 519000000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 2739300000,
+              "previous": 2006100000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.05836397058823528,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 921200000,
+              "previous": 870400000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.3654852699267235,
+      "grossMargin": 0.5313766290658197,
+      "rdIntensity": 0.27054356952506114,
+      "dilutedShareChange": 0.05836397058823528,
+      "pageUrl": "https://ahasignals.com/filing-delta/marvell/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm"
+    },
+    {
+      "id": "super-micro",
+      "company": "Super Micro Computer, Inc.",
+      "ticker": "SMCI",
+      "cik": "0001375365",
+      "role": "Server systems",
+      "pair": "server-systems",
+      "fiscalPeriod": "FY2026 Q4 reconstruction",
+      "periodEnded": "2026-06-30",
+      "filedAt": "2026-08-31",
+      "acceptedAt": "2026-08-31T14:21:23.000Z",
+      "accession": "0001375365-26-000022",
+      "form": "10-K",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 63,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.931552702482286,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(reconstructed current-quarter net sales ÷ reconstructed comparable-quarter net sales) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11119777000,
+              "previous": 5756911000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual net sales − Form 10-Q nine-month net sales, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.17470053581110484,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "reconstructed quarterly gross profit ÷ reconstructed quarterly net sales",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 1942631000,
+              "previous": 544102000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual gross profit − Form 10-Q nine-month gross profit, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11119777000,
+              "previous": 5756911000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual net sales − Form 10-Q nine-month net sales, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.018120687132484763,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "reconstructed quarterly R&D expense ÷ reconstructed quarterly net sales",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 201498000,
+              "previous": 183221000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual R&D expense − Form 10-Q nine-month R&D expense, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11119777000,
+              "previous": 5756911000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual net sales − Form 10-Q nine-month net sales, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.12859569277267546,
+          "format": "percent",
+          "comparabilityTier": "B",
+          "comparisonUse": "formula-comparable-with-source-exception",
+          "formula": "(current Q4 diluted shares ÷ comparable Q4 diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 705001000,
+              "previous": 624671000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "supplemental",
+              "calculation": "Direct Q4 value from the SEC-filed earnings exhibit; the Form 10-K does not separately tag the Q4 diluted-share denominator",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000021",
+                  "acceptedAt": "2026-08-11T20:06:16.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000021/exhibit991_20260630.htm",
+                  "use": "Q4 diluted weighted-average shares"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.931552702482286,
+      "grossMargin": 0.17470053581110484,
+      "rdIntensity": 0.018120687132484763,
+      "dilutedShareChange": 0.12859569277267546,
+      "pageUrl": "https://ahasignals.com/filing-delta/super-micro/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+    },
+    {
+      "id": "dell",
+      "company": "Dell Technologies Inc.",
+      "ticker": "DELL",
+      "cik": "0001571996",
+      "role": "Server systems and infrastructure",
+      "pair": "server-systems",
+      "fiscalPeriod": "FY2027 Q1",
+      "periodEnded": "2026-05-01",
+      "filedAt": "2026-06-09",
+      "acceptedAt": "2026-06-09T20:11:41.000Z",
+      "accession": "0001571996-26-000030",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 123,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.8753528958850201,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 43842000000,
+              "previous": 23378000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.1775010264130286,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 7782000000,
+              "previous": 4937000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 43842000000,
+              "previous": 23378000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.02242142238036586,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 983000000,
+              "previous": 808000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 43842000000,
+              "previous": 23378000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": -0.06552706552706555,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 656000000,
+              "previous": 702000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.8753528958850201,
+      "grossMargin": 0.1775010264130286,
+      "rdIntensity": 0.02242142238036586,
+      "dilutedShareChange": -0.06552706552706555,
+      "pageUrl": "https://ahasignals.com/filing-delta/dell/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm"
+    }
+  ],
+  "primaryRows": [
+    {
+      "id": "nvidia",
+      "company": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "cik": "0001045810",
+      "role": "Compute accelerators",
+      "pair": "compute",
+      "fiscalPeriod": "FY2027 Q2",
+      "periodEnded": "2026-07-26",
+      "filedAt": "2026-08-26",
+      "acceptedAt": "2026-08-26T20:36:00.000Z",
+      "accession": "0001045810-26-000075",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 37,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 1.0585114348672526,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 96221000000,
+              "previous": 46743000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.7497531723844068,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 72142000000,
+              "previous": 33853000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 96221000000,
+              "previous": 46743000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.07331040001662839,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 7054000000,
+              "previous": 4291000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 96221000000,
+              "previous": 46743000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": -0.010068481982716482,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 24285000000,
+              "previous": 24532000000,
+              "currentPeriod": "2026-04-27/2026-07-26",
+              "previousPeriod": "2025-04-28/2025-07-27"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 1.0585114348672526,
+      "grossMargin": 0.7497531723844068,
+      "rdIntensity": 0.07331040001662839,
+      "dilutedShareChange": -0.010068481982716482,
+      "pageUrl": "https://ahasignals.com/filing-delta/nvidia/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+    },
+    {
+      "id": "amd",
+      "company": "Advanced Micro Devices, Inc.",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "role": "Compute accelerators",
+      "pair": "compute",
+      "fiscalPeriod": "FY2026 Q2",
+      "periodEnded": "2026-06-27",
+      "filedAt": "2026-08-05",
+      "acceptedAt": "2026-08-04T21:40:01.000Z",
+      "accession": "0000002488-26-000123",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 66,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.5011060507482108,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11536000000,
+              "previous": 7685000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.5377080443828016,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 6203000000,
+              "previous": 3059000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11536000000,
+              "previous": 7685000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.21914008321775313,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 2528000000,
+              "previous": 1894000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11536000000,
+              "previous": 7685000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.017791411042944683,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 1659000000,
+              "previous": 1630000000,
+              "currentPeriod": "2026-03-29/2026-06-27",
+              "previousPeriod": "2025-03-30/2025-06-28"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.5011060507482108,
+      "grossMargin": 0.5377080443828016,
+      "rdIntensity": 0.21914008321775313,
+      "dilutedShareChange": 0.017791411042944683,
+      "pageUrl": "https://ahasignals.com/filing-delta/amd/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm"
+    },
+    {
+      "id": "arista-networks",
+      "company": "Arista Networks, Inc.",
+      "ticker": "ANET",
+      "cik": "0001596532",
+      "role": "AI networking systems",
+      "pair": "networking",
+      "fiscalPeriod": "FY2026 Q2",
+      "periodEnded": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "acceptedAt": "2026-08-04T22:08:09.000Z",
+      "accession": "0001596532-26-000175",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 63,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.3768595791001452,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 3035700000,
+              "previous": 2204800000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.6292782554270844,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 1910300000,
+              "previous": 1438600000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 3035700000,
+              "previous": 2204800000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.11470171624337056,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 348200000,
+              "previous": 296500000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 3035700000,
+              "previous": 2204800000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.0037759597230961894,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 1276000000,
+              "previous": 1271200000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.3768595791001452,
+      "grossMargin": 0.6292782554270844,
+      "rdIntensity": 0.11470171624337056,
+      "dilutedShareChange": 0.0037759597230961894,
+      "pageUrl": "https://ahasignals.com/filing-delta/arista-networks/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm"
+    },
+    {
+      "id": "marvell",
+      "company": "Marvell Technology, Inc.",
+      "ticker": "MRVL",
+      "cik": "0001835632",
+      "role": "Network and interconnect silicon",
+      "pair": "networking",
+      "fiscalPeriod": "FY2027 Q2",
+      "periodEnded": "2026-08-01",
+      "filedAt": "2026-08-28",
+      "acceptedAt": "2026-08-28T20:04:02.000Z",
+      "accession": "0001835632-26-000025",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 31,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.3654852699267235,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 2739300000,
+              "previous": 2006100000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.5313766290658197,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 1455600000,
+              "previous": 1010600000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 2739300000,
+              "previous": 2006100000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.27054356952506114,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 741100000,
+              "previous": 519000000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 2739300000,
+              "previous": 2006100000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.05836397058823528,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 921200000,
+              "previous": 870400000,
+              "currentPeriod": "2026-05-03/2026-08-01",
+              "previousPeriod": "2025-05-04/2025-08-02"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.3654852699267235,
+      "grossMargin": 0.5313766290658197,
+      "rdIntensity": 0.27054356952506114,
+      "dilutedShareChange": 0.05836397058823528,
+      "pageUrl": "https://ahasignals.com/filing-delta/marvell/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm"
+    },
+    {
+      "id": "super-micro",
+      "company": "Super Micro Computer, Inc.",
+      "ticker": "SMCI",
+      "cik": "0001375365",
+      "role": "Server systems",
+      "pair": "server-systems",
+      "fiscalPeriod": "FY2026 Q4 reconstruction",
+      "periodEnded": "2026-06-30",
+      "filedAt": "2026-08-31",
+      "acceptedAt": "2026-08-31T14:21:23.000Z",
+      "accession": "0001375365-26-000022",
+      "form": "10-K",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 63,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.931552702482286,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(reconstructed current-quarter net sales ÷ reconstructed comparable-quarter net sales) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11119777000,
+              "previous": 5756911000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual net sales − Form 10-Q nine-month net sales, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.17470053581110484,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "reconstructed quarterly gross profit ÷ reconstructed quarterly net sales",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 1942631000,
+              "previous": 544102000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual gross profit − Form 10-Q nine-month gross profit, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11119777000,
+              "previous": 5756911000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual net sales − Form 10-Q nine-month net sales, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.018120687132484763,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "reconstructed quarterly R&D expense ÷ reconstructed quarterly net sales",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 201498000,
+              "previous": 183221000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual R&D expense − Form 10-Q nine-month R&D expense, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+              "unit": "USD",
+              "current": 11119777000,
+              "previous": 5756911000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "reconstructed",
+              "calculation": "Form 10-K annual net sales − Form 10-Q nine-month net sales, for each fiscal year",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000022",
+                  "acceptedAt": "2026-08-31T14:21:23.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+                  "use": "FY2026 and FY2025 annual facts"
+                },
+                {
+                  "accession": "0001375365-26-000014",
+                  "acceptedAt": "2026-05-11T20:38:08.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000014/smci-20260331.htm",
+                  "use": "FY2026 and FY2025 nine-month facts"
+                }
+              ]
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": 0.12859569277267546,
+          "format": "percent",
+          "comparabilityTier": "B",
+          "comparisonUse": "formula-comparable-with-source-exception",
+          "formula": "(current Q4 diluted shares ÷ comparable Q4 diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 705001000,
+              "previous": 624671000,
+              "currentPeriod": "2026-04-01/2026-06-30",
+              "previousPeriod": "2025-04-01/2025-06-30",
+              "evidenceStatus": "supplemental",
+              "calculation": "Direct Q4 value from the SEC-filed earnings exhibit; the Form 10-K does not separately tag the Q4 diluted-share denominator",
+              "sourceRefs": [
+                {
+                  "accession": "0001375365-26-000021",
+                  "acceptedAt": "2026-08-11T20:06:16.000Z",
+                  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000021/exhibit991_20260630.htm",
+                  "use": "Q4 diluted weighted-average shares"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.931552702482286,
+      "grossMargin": 0.17470053581110484,
+      "rdIntensity": 0.018120687132484763,
+      "dilutedShareChange": 0.12859569277267546,
+      "pageUrl": "https://ahasignals.com/filing-delta/super-micro/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm"
+    },
+    {
+      "id": "dell",
+      "company": "Dell Technologies Inc.",
+      "ticker": "DELL",
+      "cik": "0001571996",
+      "role": "Server systems and infrastructure",
+      "pair": "server-systems",
+      "fiscalPeriod": "FY2027 Q1",
+      "periodEnded": "2026-05-01",
+      "filedAt": "2026-06-09",
+      "acceptedAt": "2026-06-09T20:11:41.000Z",
+      "accession": "0001571996-26-000030",
+      "form": "10-Q",
+      "sourceStatus": "filed",
+      "primaryMatrixEligible": true,
+      "observationAgeDays": 123,
+      "metrics": {
+        "revenueGrowth": {
+          "value": 0.8753528958850201,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current-quarter revenue ÷ prior-year comparable-quarter revenue) − 1",
+          "evidence": [
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 43842000000,
+              "previous": 23378000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        },
+        "grossMargin": {
+          "value": 0.1775010264130286,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly gross profit ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "gross-profit-quarter",
+              "taxonomy": "us-gaap:GrossProfit",
+              "unit": "USD",
+              "current": 7782000000,
+              "previous": 4937000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 43842000000,
+              "previous": 23378000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        },
+        "rdIntensity": {
+          "value": 0.02242142238036586,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "quarterly R&D expense ÷ quarterly revenue",
+          "evidence": [
+            {
+              "factId": "rd-quarter",
+              "taxonomy": "us-gaap:ResearchAndDevelopmentExpense",
+              "unit": "USD",
+              "current": 983000000,
+              "previous": 808000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            },
+            {
+              "factId": "revenue-quarter",
+              "taxonomy": "us-gaap:Revenues",
+              "unit": "USD",
+              "current": 43842000000,
+              "previous": 23378000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        },
+        "dilutedShareChange": {
+          "value": -0.06552706552706555,
+          "format": "percent",
+          "comparabilityTier": "A",
+          "comparisonUse": "formula-comparable",
+          "formula": "(current diluted shares ÷ comparable diluted shares) − 1",
+          "evidence": [
+            {
+              "factId": "diluted-shares-quarter",
+              "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+              "unit": "shares",
+              "current": 656000000,
+              "previous": 702000000,
+              "currentPeriod": "2026-01-31/2026-05-01",
+              "previousPeriod": "2025-02-01/2025-05-02"
+            }
+          ]
+        }
+      },
+      "revenueGrowth": 0.8753528958850201,
+      "grossMargin": 0.1775010264130286,
+      "rdIntensity": 0.02242142238036586,
+      "dilutedShareChange": -0.06552706552706555,
+      "pageUrl": "https://ahasignals.com/filing-delta/dell/",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm"
+    }
+  ],
+  "provisionalRows": [],
+  "cashFlowObservations": [
+    {
+      "id": "nvidia",
+      "company": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "window": "six-month YTD",
+      "comparabilityTier": "B",
+      "freeCashFlowMargin": 0.39354577506368194,
+      "sbcIntensity": 0.02223384335093372,
+      "freeCashFlowFormula": "(operating cash flow − purchases of property, equipment and intangible assets) ÷ matching-window revenue",
+      "freeCashFlowEvidence": [
+        {
+          "factId": "operating-cash-flow-ytd",
+          "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "current": 74421000000,
+          "previous": 42779000000,
+          "currentPeriod": "2026-01-26/2026-07-26",
+          "previousPeriod": "2025-01-27/2025-07-27"
+        },
+        {
+          "factId": "productive-assets-ytd",
+          "taxonomy": "us-gaap:PaymentsToAcquireProductiveAssets",
+          "unit": "USD",
+          "current": 4434000000,
+          "previous": 3122000000,
+          "currentPeriod": "2026-01-26/2026-07-26",
+          "previousPeriod": "2025-01-27/2025-07-27"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:Revenues",
+          "unit": "USD",
+          "current": 177837000000,
+          "previous": 90805000000,
+          "currentPeriod": "2026-01-26/2026-07-26",
+          "previousPeriod": "2025-01-27/2025-07-27"
+        }
+      ],
+      "sbcFormula": "year-to-date stock-based compensation ÷ year-to-date revenue",
+      "sbcEvidence": [
+        {
+          "factId": "sbc-ytd",
+          "taxonomy": "us-gaap:ShareBasedCompensation",
+          "unit": "USD",
+          "current": 3954000000,
+          "previous": 3099000000,
+          "currentPeriod": "2026-01-26/2026-07-26",
+          "previousPeriod": "2025-01-27/2025-07-27"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:Revenues",
+          "unit": "USD",
+          "current": 177837000000,
+          "previous": 90805000000,
+          "currentPeriod": "2026-01-26/2026-07-26",
+          "previousPeriod": "2025-01-27/2025-07-27"
+        }
+      ],
+      "capexDefinition": "Property, equipment and intangible assets",
+      "revenuePeriod": "2026-01-26/2026-07-26",
+      "accession": "0001045810-26-000075",
+      "acceptedAt": "2026-08-26T20:36:00.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "comparisonUse": "matched-window descriptive comparison"
+    },
+    {
+      "id": "amd",
+      "company": "Advanced Micro Devices, Inc.",
+      "ticker": "AMD",
+      "window": "six-month YTD",
+      "comparabilityTier": "B",
+      "freeCashFlowMargin": 0.18926981504428841,
+      "sbcIntensity": 0.04543577034283354,
+      "freeCashFlowFormula": "(operating cash flow − purchases of property and equipment) ÷ year-to-date revenue",
+      "freeCashFlowEvidence": [
+        {
+          "factId": "operating-cash-flow",
+          "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "current": 5321000000,
+          "previous": 2950000000,
+          "currentPeriod": "2025-12-28/2026-06-27",
+          "previousPeriod": "2024-12-29/2025-06-28"
+        },
+        {
+          "factId": "capex",
+          "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+          "unit": "USD",
+          "current": 1197000000,
+          "previous": 494000000,
+          "currentPeriod": "2025-12-28/2026-06-27",
+          "previousPeriod": "2024-12-29/2025-06-28"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 21789000000,
+          "previous": 15123000000,
+          "currentPeriod": "2025-12-28/2026-06-27",
+          "previousPeriod": "2024-12-29/2025-06-28"
+        }
+      ],
+      "sbcFormula": "year-to-date stock-based compensation ÷ year-to-date revenue",
+      "sbcEvidence": [
+        {
+          "factId": "sbc",
+          "taxonomy": "us-gaap:ShareBasedCompensation",
+          "unit": "USD",
+          "current": 990000000,
+          "previous": 733000000,
+          "currentPeriod": "2025-12-28/2026-06-27",
+          "previousPeriod": "2024-12-29/2025-06-28"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 21789000000,
+          "previous": 15123000000,
+          "currentPeriod": "2025-12-28/2026-06-27",
+          "previousPeriod": "2024-12-29/2025-06-28"
+        }
+      ],
+      "capexDefinition": "Property and equipment",
+      "revenuePeriod": "2025-12-28/2026-06-27",
+      "accession": "0000002488-26-000123",
+      "acceptedAt": "2026-08-04T21:40:01.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+      "comparisonUse": "matched-window descriptive comparison"
+    },
+    {
+      "id": "arista-networks",
+      "company": "Arista Networks, Inc.",
+      "ticker": "ANET",
+      "window": "six-month YTD",
+      "comparabilityTier": "B",
+      "freeCashFlowMargin": 0.4686580674360715,
+      "sbcIntensity": 0.042003934060960535,
+      "freeCashFlowFormula": "(operating cash flow − purchases of property and equipment) ÷ matching-window revenue",
+      "freeCashFlowEvidence": [
+        {
+          "factId": "operating-cash-flow-ytd",
+          "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "current": 2776500000,
+          "previous": 1841800000,
+          "currentPeriod": "2026-01-01/2026-06-30",
+          "previousPeriod": "2025-01-01/2025-06-30"
+        },
+        {
+          "factId": "capex-ytd",
+          "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+          "unit": "USD",
+          "current": 84200000,
+          "previous": 52400000,
+          "currentPeriod": "2026-01-01/2026-06-30",
+          "previousPeriod": "2025-01-01/2025-06-30"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 5744700000,
+          "previous": 4209600000,
+          "currentPeriod": "2026-01-01/2026-06-30",
+          "previousPeriod": "2025-01-01/2025-06-30"
+        }
+      ],
+      "sbcFormula": "year-to-date stock-based compensation ÷ year-to-date revenue",
+      "sbcEvidence": [
+        {
+          "factId": "sbc-ytd",
+          "taxonomy": "us-gaap:ShareBasedCompensation",
+          "unit": "USD",
+          "current": 241300000,
+          "previous": 178200000,
+          "currentPeriod": "2026-01-01/2026-06-30",
+          "previousPeriod": "2025-01-01/2025-06-30"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 5744700000,
+          "previous": 4209600000,
+          "currentPeriod": "2026-01-01/2026-06-30",
+          "previousPeriod": "2025-01-01/2025-06-30"
+        }
+      ],
+      "capexDefinition": "Property and equipment",
+      "revenuePeriod": "2026-01-01/2026-06-30",
+      "accession": "0001596532-26-000175",
+      "acceptedAt": "2026-08-04T22:08:09.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm",
+      "comparisonUse": "matched-window descriptive comparison"
+    },
+    {
+      "id": "marvell",
+      "company": "Marvell Technology, Inc.",
+      "ticker": "MRVL",
+      "window": "six-month YTD",
+      "comparabilityTier": "B",
+      "freeCashFlowMargin": 0.18651955556417366,
+      "sbcIntensity": 0.10350778538325803,
+      "freeCashFlowFormula": "(operating cash flow − purchases of property and equipment) ÷ year-to-date revenue",
+      "freeCashFlowEvidence": [
+        {
+          "factId": "operating-cash-flow",
+          "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "current": 1244300000,
+          "previous": 794500000,
+          "currentPeriod": "2026-02-01/2026-08-01",
+          "previousPeriod": "2025-02-02/2025-08-02"
+        },
+        {
+          "factId": "capex",
+          "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+          "unit": "USD",
+          "current": 282400000,
+          "previous": 166300000,
+          "currentPeriod": "2026-02-01/2026-08-01",
+          "previousPeriod": "2025-02-02/2025-08-02"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 5157100000,
+          "previous": 3901400000,
+          "currentPeriod": "2026-02-01/2026-08-01",
+          "previousPeriod": "2025-02-02/2025-08-02"
+        }
+      ],
+      "sbcFormula": "year-to-date stock-based compensation ÷ year-to-date revenue",
+      "sbcEvidence": [
+        {
+          "factId": "sbc",
+          "taxonomy": "us-gaap:ShareBasedCompensation",
+          "unit": "USD",
+          "current": 533800000,
+          "previous": 295700000,
+          "currentPeriod": "2026-02-01/2026-08-01",
+          "previousPeriod": "2025-02-02/2025-08-02"
+        },
+        {
+          "factId": "revenue-ytd",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 5157100000,
+          "previous": 3901400000,
+          "currentPeriod": "2026-02-01/2026-08-01",
+          "previousPeriod": "2025-02-02/2025-08-02"
+        }
+      ],
+      "capexDefinition": "Property and equipment",
+      "revenuePeriod": "2026-02-01/2026-08-01",
+      "accession": "0001835632-26-000025",
+      "acceptedAt": "2026-08-28T20:04:02.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
+      "comparisonUse": "matched-window descriptive comparison"
+    },
+    {
+      "id": "dell",
+      "company": "Dell Technologies Inc.",
+      "ticker": "DELL",
+      "window": "three-month quarter",
+      "comparabilityTier": "C",
+      "freeCashFlowMargin": 0.07111901829296109,
+      "sbcIntensity": 0.0043109347201313805,
+      "freeCashFlowFormula": "(operating cash flow − purchases of property and equipment) ÷ quarterly revenue",
+      "freeCashFlowEvidence": [
+        {
+          "factId": "operating-cash-flow",
+          "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "current": 4081000000,
+          "previous": 2796000000,
+          "currentPeriod": "2026-01-31/2026-05-01",
+          "previousPeriod": "2025-02-01/2025-05-02"
+        },
+        {
+          "factId": "capex",
+          "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+          "unit": "USD",
+          "current": 963000000,
+          "previous": 568000000,
+          "currentPeriod": "2026-01-31/2026-05-01",
+          "previousPeriod": "2025-02-01/2025-05-02"
+        },
+        {
+          "factId": "revenue-quarter",
+          "taxonomy": "us-gaap:Revenues",
+          "unit": "USD",
+          "current": 43842000000,
+          "previous": 23378000000,
+          "currentPeriod": "2026-01-31/2026-05-01",
+          "previousPeriod": "2025-02-01/2025-05-02"
+        }
+      ],
+      "sbcFormula": "quarterly stock-based compensation ÷ quarterly revenue",
+      "sbcEvidence": [
+        {
+          "factId": "sbc",
+          "taxonomy": "us-gaap:ShareBasedCompensation",
+          "unit": "USD",
+          "current": 189000000,
+          "previous": 190000000,
+          "currentPeriod": "2026-01-31/2026-05-01",
+          "previousPeriod": "2025-02-01/2025-05-02"
+        },
+        {
+          "factId": "revenue-quarter",
+          "taxonomy": "us-gaap:Revenues",
+          "unit": "USD",
+          "current": 43842000000,
+          "previous": 23378000000,
+          "currentPeriod": "2026-01-31/2026-05-01",
+          "previousPeriod": "2025-02-01/2025-05-02"
+        }
+      ],
+      "capexDefinition": "Property and equipment",
+      "revenuePeriod": "2026-01-31/2026-05-01",
+      "accession": "0001571996-26-000030",
+      "acceptedAt": "2026-06-09T20:11:41.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm",
+      "comparisonUse": "standalone context only"
+    },
+    {
+      "id": "super-micro",
+      "company": "Super Micro Computer, Inc.",
+      "ticker": "SMCI",
+      "window": "annual",
+      "comparabilityTier": "C",
+      "freeCashFlowMargin": -0.17847764251618511,
+      "sbcIntensity": 0.010549989514393543,
+      "freeCashFlowFormula": "(operating cash flow − purchases of property, plant and equipment) ÷ matching-window revenue",
+      "freeCashFlowEvidence": [
+        {
+          "factId": "ocf-annual",
+          "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+          "unit": "USD",
+          "current": -6809886000,
+          "previous": 1659524000,
+          "currentPeriod": "2025-07-01/2026-06-30",
+          "previousPeriod": "2024-07-01/2025-06-30",
+          "evidenceStatus": "direct"
+        },
+        {
+          "factId": "capex-annual",
+          "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+          "unit": "USD",
+          "current": 161999000,
+          "previous": 127214000,
+          "currentPeriod": "2025-07-01/2026-06-30",
+          "previousPeriod": "2024-07-01/2025-06-30",
+          "evidenceStatus": "direct"
+        },
+        {
+          "factId": "revenue-annual",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 39063072000,
+          "previous": 21972042000,
+          "currentPeriod": "2025-07-01/2026-06-30",
+          "previousPeriod": "2024-07-01/2025-06-30",
+          "evidenceStatus": "direct"
+        }
+      ],
+      "sbcFormula": "annual stock-based compensation ÷ annual net sales",
+      "sbcEvidence": [
+        {
+          "factId": "sbc-annual",
+          "taxonomy": "us-gaap:ShareBasedCompensation",
+          "unit": "USD",
+          "current": 412115000,
+          "previous": 314452000,
+          "currentPeriod": "2025-07-01/2026-06-30",
+          "previousPeriod": "2024-07-01/2025-06-30",
+          "evidenceStatus": "direct"
+        },
+        {
+          "factId": "revenue-annual",
+          "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+          "unit": "USD",
+          "current": 39063072000,
+          "previous": 21972042000,
+          "currentPeriod": "2025-07-01/2026-06-30",
+          "previousPeriod": "2024-07-01/2025-06-30",
+          "evidenceStatus": "direct"
+        }
+      ],
+      "capexDefinition": "Property, plant and equipment",
+      "revenuePeriod": "2025-07-01/2026-06-30",
+      "accession": "0001375365-26-000022",
+      "acceptedAt": "2026-08-31T14:21:23.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+      "comparisonUse": "standalone context only"
+    }
+  ],
+  "limitations": [
+    "The matrix fixes one public-information cutoff but uses each issuer’s latest eligible filing; fiscal-quarter end dates are not synchronized.",
+    "Company-wide filings do not isolate AI-only revenue, margin, research spending or cash flow.",
+    "Super Micro Q4 net sales, gross profit and R&D are reconstructed from its FY2026 Form 10-K less its nine-month Form 10-Q facts. Its Q4 diluted-share denominator remains a Tier B value from the SEC-filed earnings exhibit because the 10-K does not separately tag that quarter.",
+    "Cash-flow and stock-compensation observations are separated from the quarterly matrix because their reporting windows and capex definitions are not uniform.",
+    "The dataset is descriptive research. It is not a composite score, security ranking, forecast or investment recommendation."
+  ]
+}

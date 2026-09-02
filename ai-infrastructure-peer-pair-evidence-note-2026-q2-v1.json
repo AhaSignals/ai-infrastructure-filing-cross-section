@@ -1,0 +1,712 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaUrl": "https://ahasignals.com/data/filing-delta/cross-section-evidence-note-schema.json",
+  "artifact": {
+    "id": "ai-infrastructure-peer-pair-evidence-note-2026-q2-v1",
+    "title": "AI Infrastructure Filing Cross-Section: 2026 Q2 Evidence Note",
+    "pageUrl": "https://ahasignals.com/research/ai-infrastructure-filing-cross-section-2026-q2/",
+    "jsonUrl": "https://ahasignals.com/data/filing-delta/cross-section/evidence-notes/ai-infrastructure-peer-pair-evidence-note-2026-q2-v1.json",
+    "csvUrl": "https://ahasignals.com/data/filing-delta/cross-section/evidence-notes/ai-infrastructure-peer-pair-evidence-note-2026-q2-v1.csv",
+    "sha256Url": "https://ahasignals.com/data/filing-delta/cross-section/evidence-notes/ai-infrastructure-peer-pair-evidence-note-2026-q2-v1.sha256",
+    "bibUrl": "https://ahasignals.com/data/filing-delta/cross-section/evidence-notes/ai-infrastructure-peer-pair-evidence-note-2026-q2-v1.bib",
+    "publishedAt": "2026-09-01",
+    "knowledgeCutoff": "2026-09-01T00:00:00.000Z",
+    "license": "CC BY 4.0",
+    "creator": "AhaSignals",
+    "status": "frozen"
+  },
+  "sourceRelease": {
+    "id": "ai-infrastructure-cross-section-2026-09-01-v2",
+    "version": "2.0.0",
+    "url": "https://ahasignals.com/data/filing-delta/cross-section/releases/ai-infrastructure-cross-section-2026-09-01-v2.json",
+    "sha256": "430406a8dbea1c21e7ca0ce09f829580616f33b0552ce0089e4b977d01cbc809",
+    "issuerCount": 6,
+    "metricCellCount": 24
+  },
+  "question": "Within three role-matched AI-infrastructure issuer pairs, which differences remain after applying one frozen quarterly filing contract?",
+  "finding": {
+    "headline": "Similar top-line growth did not imply similar margin, research-spending or share-count profiles.",
+    "statement": "The networking and server pairs show the same caution from two angles: relatively close revenue-growth rates coexisted with wider differences in at least one of gross margin, R&D intensity or diluted-share change. The compute pair differed materially across all four observations.",
+    "boundary": "This is a six-issuer descriptive comparison, not a factor, composite score, synchronized calendar-quarter ranking or return forecast."
+  },
+  "pairSummaries": [
+    {
+      "id": "compute",
+      "label": "Compute accelerators",
+      "firstIssuer": {
+        "id": "nvidia",
+        "company": "NVIDIA Corporation",
+        "ticker": "NVDA"
+      },
+      "secondIssuer": {
+        "id": "amd",
+        "company": "Advanced Micro Devices, Inc.",
+        "ticker": "AMD"
+      },
+      "absoluteGapPercentagePoints": {
+        "revenueGrowth": 55.74053841190418,
+        "grossMargin": 21.204512800160515,
+        "rdIntensity": 14.582968320112474,
+        "dilutedShareChange": 2.7859893025661164
+      },
+      "reading": "NVDA reported 55.74 percentage points more revenue growth and 21.20 points more gross margin than AMD; its R&D intensity and diluted-share change were lower by 14.58 and 2.79 points.",
+      "strictRankingAllowed": false
+    },
+    {
+      "id": "networking",
+      "label": "Networking and interconnect",
+      "firstIssuer": {
+        "id": "arista-networks",
+        "company": "Arista Networks, Inc.",
+        "ticker": "ANET"
+      },
+      "secondIssuer": {
+        "id": "marvell",
+        "company": "Marvell Technology, Inc.",
+        "ticker": "MRVL"
+      },
+      "absoluteGapPercentagePoints": {
+        "revenueGrowth": 1.1374309173421748,
+        "grossMargin": 9.790162636126464,
+        "rdIntensity": 15.58418532816906,
+        "dilutedShareChange": 5.458801086513909
+      },
+      "reading": "Revenue growth differed by 1.14 percentage points. Gross margin, R&D intensity and diluted-share change differed by 9.79, 15.58 and 5.46 points.",
+      "strictRankingAllowed": false
+    },
+    {
+      "id": "server-systems",
+      "label": "Server systems",
+      "firstIssuer": {
+        "id": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI"
+      },
+      "secondIssuer": {
+        "id": "dell",
+        "company": "Dell Technologies Inc.",
+        "ticker": "DELL"
+      },
+      "absoluteGapPercentagePoints": {
+        "revenueGrowth": 5.619980659726598,
+        "grossMargin": 0.28004906019237497,
+        "rdIntensity": 0.4300735247881098,
+        "dilutedShareChange": 19.412275829974103
+      },
+      "reading": "Revenue growth differed by 5.62 percentage points and gross margin by 0.28 points. Diluted-share change differed by 19.41 points; the SMCI share cell is Tier B.",
+      "strictRankingAllowed": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "networking-top-line-similarity-did-not-extend-to-the-rest-of-the-profile",
+      "text": "Arista and Marvell quarterly revenue growth differed by 1.14 percentage points, while gross margin, R&D intensity and diluted-share change differed by 9.79, 15.58 and 5.46 points.",
+      "status": "descriptive-observation",
+      "support": [
+        "networking:revenueGrowth:anet-minus-mrvl",
+        "networking:grossMargin:anet-minus-mrvl",
+        "networking:rdIntensity:anet-minus-mrvl",
+        "networking:dilutedShareChange:anet-minus-mrvl"
+      ]
+    },
+    {
+      "id": "server-top-line-and-margin-similarity-did-not-extend-to-share-count",
+      "text": "Super Micro and Dell quarterly revenue growth differed by 5.62 percentage points and gross margin by 0.28 points, while diluted-share change differed by 19.41 points. The Super Micro diluted-share observation is Tier B.",
+      "status": "descriptive-observation",
+      "support": [
+        "server-systems:revenueGrowth:smci-minus-dell",
+        "server-systems:grossMargin:smci-minus-dell",
+        "server-systems:rdIntensity:smci-minus-dell",
+        "server-systems:dilutedShareChange:smci-minus-dell"
+      ]
+    },
+    {
+      "id": "compute-pair-differed-across-all-four-filed-features",
+      "text": "NVIDIA and AMD differed by 55.74 percentage points in quarterly revenue growth, 21.20 in gross margin, 14.58 in R&D intensity and 2.79 in diluted-share change.",
+      "status": "descriptive-observation",
+      "support": [
+        "compute:revenueGrowth:nvda-minus-amd",
+        "compute:grossMargin:nvda-minus-amd",
+        "compute:rdIntensity:nvda-minus-amd",
+        "compute:dilutedShareChange:nvda-minus-amd"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "sequence": 1,
+      "comparisonId": "compute:revenueGrowth:nvda-minus-amd",
+      "pair": {
+        "id": "compute",
+        "label": "Compute accelerators"
+      },
+      "metric": {
+        "id": "revenueGrowth",
+        "label": "Quarterly revenue growth",
+        "definition": "(current quarter revenue ÷ prior-year comparable quarter revenue) − 1",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "nvidia",
+        "company": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "value": 1.0585114348672526,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-07-26",
+        "acceptedAt": "2026-08-26T20:36:00.000Z",
+        "accession": "0001045810-26-000075",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "evidenceSha256": "ef340a04d5c688fc508ba1478ea70506983a7b70837868d6f19d9388aac0d7a0"
+      },
+      "second": {
+        "issuerId": "amd",
+        "company": "Advanced Micro Devices, Inc.",
+        "ticker": "AMD",
+        "value": 0.5011060507482108,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-27",
+        "acceptedAt": "2026-08-04T21:40:01.000Z",
+        "accession": "0000002488-26-000123",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+        "evidenceSha256": "8eb7e8340f3f0a51bbd0e579eb4359f36cab826da078308d71ac195b82dd5df8"
+      },
+      "difference": {
+        "convention": "NVDA minus AMD",
+        "ratio": 0.5574053841190418,
+        "percentagePoints": 55.74053841190418,
+        "absolutePercentagePoints": 55.74053841190418
+      }
+    },
+    {
+      "sequence": 2,
+      "comparisonId": "compute:grossMargin:nvda-minus-amd",
+      "pair": {
+        "id": "compute",
+        "label": "Compute accelerators"
+      },
+      "metric": {
+        "id": "grossMargin",
+        "label": "Quarterly gross margin",
+        "definition": "current quarter gross profit ÷ current quarter revenue",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "nvidia",
+        "company": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "value": 0.7497531723844068,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-07-26",
+        "acceptedAt": "2026-08-26T20:36:00.000Z",
+        "accession": "0001045810-26-000075",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "evidenceSha256": "a666216442e065e2dbb7bf58ad4bd9670fa543873081c1cff4e5a8d8084a972c"
+      },
+      "second": {
+        "issuerId": "amd",
+        "company": "Advanced Micro Devices, Inc.",
+        "ticker": "AMD",
+        "value": 0.5377080443828016,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-27",
+        "acceptedAt": "2026-08-04T21:40:01.000Z",
+        "accession": "0000002488-26-000123",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+        "evidenceSha256": "f1f0c1ce3bddc7835febef29b903f0e9e996dd1d1a14612832bcf3d777cbc30f"
+      },
+      "difference": {
+        "convention": "NVDA minus AMD",
+        "ratio": 0.21204512800160513,
+        "percentagePoints": 21.204512800160515,
+        "absolutePercentagePoints": 21.204512800160515
+      }
+    },
+    {
+      "sequence": 3,
+      "comparisonId": "compute:rdIntensity:nvda-minus-amd",
+      "pair": {
+        "id": "compute",
+        "label": "Compute accelerators"
+      },
+      "metric": {
+        "id": "rdIntensity",
+        "label": "Quarterly R&D intensity",
+        "definition": "current quarter research and development expense ÷ current quarter revenue",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "nvidia",
+        "company": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "value": 0.07331040001662839,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-07-26",
+        "acceptedAt": "2026-08-26T20:36:00.000Z",
+        "accession": "0001045810-26-000075",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "evidenceSha256": "86ef0a55ef99d23b851514dc0b116e6b7eb7366d5d9989c2a35479b08f0be689"
+      },
+      "second": {
+        "issuerId": "amd",
+        "company": "Advanced Micro Devices, Inc.",
+        "ticker": "AMD",
+        "value": 0.21914008321775313,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-27",
+        "acceptedAt": "2026-08-04T21:40:01.000Z",
+        "accession": "0000002488-26-000123",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+        "evidenceSha256": "3a5d008e020286d5042f7c67f2605c676437c5a899aaef8e3daa820d70c3ac52"
+      },
+      "difference": {
+        "convention": "NVDA minus AMD",
+        "ratio": -0.14582968320112474,
+        "percentagePoints": -14.582968320112474,
+        "absolutePercentagePoints": 14.582968320112474
+      }
+    },
+    {
+      "sequence": 4,
+      "comparisonId": "compute:dilutedShareChange:nvda-minus-amd",
+      "pair": {
+        "id": "compute",
+        "label": "Compute accelerators"
+      },
+      "metric": {
+        "id": "dilutedShareChange",
+        "label": "Diluted share change",
+        "definition": "(current quarter diluted weighted-average shares ÷ prior-year comparable quarter shares) − 1",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "nvidia",
+        "company": "NVIDIA Corporation",
+        "ticker": "NVDA",
+        "value": -0.010068481982716482,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-07-26",
+        "acceptedAt": "2026-08-26T20:36:00.000Z",
+        "accession": "0001045810-26-000075",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "evidenceSha256": "5635b21939a1ff7f9c3e58b34cf515d1a0d4c82e1ba9ff2dee9667c18bad4aa0"
+      },
+      "second": {
+        "issuerId": "amd",
+        "company": "Advanced Micro Devices, Inc.",
+        "ticker": "AMD",
+        "value": 0.017791411042944683,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-27",
+        "acceptedAt": "2026-08-04T21:40:01.000Z",
+        "accession": "0000002488-26-000123",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000123/amd-20260627.htm",
+        "evidenceSha256": "505e129d286d3fa92bf18c4e75ffabdc545837dbb808d8986bb4f5ac3ab7cf4b"
+      },
+      "difference": {
+        "convention": "NVDA minus AMD",
+        "ratio": -0.027859893025661164,
+        "percentagePoints": -2.7859893025661164,
+        "absolutePercentagePoints": 2.7859893025661164
+      }
+    },
+    {
+      "sequence": 5,
+      "comparisonId": "networking:revenueGrowth:anet-minus-mrvl",
+      "pair": {
+        "id": "networking",
+        "label": "Networking and interconnect"
+      },
+      "metric": {
+        "id": "revenueGrowth",
+        "label": "Quarterly revenue growth",
+        "definition": "(current quarter revenue ÷ prior-year comparable quarter revenue) − 1",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "arista-networks",
+        "company": "Arista Networks, Inc.",
+        "ticker": "ANET",
+        "value": 0.3768595791001452,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-04T22:08:09.000Z",
+        "accession": "0001596532-26-000175",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm",
+        "evidenceSha256": "4c4505c0e8910c818864c09d6b464b94dec68e20f47f9787d9ccd830da31d94c"
+      },
+      "second": {
+        "issuerId": "marvell",
+        "company": "Marvell Technology, Inc.",
+        "ticker": "MRVL",
+        "value": 0.3654852699267235,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-08-01",
+        "acceptedAt": "2026-08-28T20:04:02.000Z",
+        "accession": "0001835632-26-000025",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
+        "evidenceSha256": "09631a4a369cfca4c6e701b4ef5f6cb92286aa1f51274d95b3fd19c01e99ffec"
+      },
+      "difference": {
+        "convention": "ANET minus MRVL",
+        "ratio": 0.011374309173421748,
+        "percentagePoints": 1.1374309173421748,
+        "absolutePercentagePoints": 1.1374309173421748
+      }
+    },
+    {
+      "sequence": 6,
+      "comparisonId": "networking:grossMargin:anet-minus-mrvl",
+      "pair": {
+        "id": "networking",
+        "label": "Networking and interconnect"
+      },
+      "metric": {
+        "id": "grossMargin",
+        "label": "Quarterly gross margin",
+        "definition": "current quarter gross profit ÷ current quarter revenue",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "arista-networks",
+        "company": "Arista Networks, Inc.",
+        "ticker": "ANET",
+        "value": 0.6292782554270844,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-04T22:08:09.000Z",
+        "accession": "0001596532-26-000175",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm",
+        "evidenceSha256": "d5713bd07647d988f2bd219ec350b78553663dd9da316c3399b31b674e388434"
+      },
+      "second": {
+        "issuerId": "marvell",
+        "company": "Marvell Technology, Inc.",
+        "ticker": "MRVL",
+        "value": 0.5313766290658197,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-08-01",
+        "acceptedAt": "2026-08-28T20:04:02.000Z",
+        "accession": "0001835632-26-000025",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
+        "evidenceSha256": "11b8db9b8e0582068a693ff3d608166eb034dbb1ece03464dd2566b4b13a1072"
+      },
+      "difference": {
+        "convention": "ANET minus MRVL",
+        "ratio": 0.09790162636126465,
+        "percentagePoints": 9.790162636126464,
+        "absolutePercentagePoints": 9.790162636126464
+      }
+    },
+    {
+      "sequence": 7,
+      "comparisonId": "networking:rdIntensity:anet-minus-mrvl",
+      "pair": {
+        "id": "networking",
+        "label": "Networking and interconnect"
+      },
+      "metric": {
+        "id": "rdIntensity",
+        "label": "Quarterly R&D intensity",
+        "definition": "current quarter research and development expense ÷ current quarter revenue",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "arista-networks",
+        "company": "Arista Networks, Inc.",
+        "ticker": "ANET",
+        "value": 0.11470171624337056,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-04T22:08:09.000Z",
+        "accession": "0001596532-26-000175",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm",
+        "evidenceSha256": "d24cb0dbf992906dd2e3e1e3d6dfbbb296fd1141cdec0844a5471b278b89deb5"
+      },
+      "second": {
+        "issuerId": "marvell",
+        "company": "Marvell Technology, Inc.",
+        "ticker": "MRVL",
+        "value": 0.27054356952506114,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-08-01",
+        "acceptedAt": "2026-08-28T20:04:02.000Z",
+        "accession": "0001835632-26-000025",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
+        "evidenceSha256": "e25a00c75cdc4ad0d87ec1d958a7f03ec8843ff8f9fe2ebf8beb8bde5880a83d"
+      },
+      "difference": {
+        "convention": "ANET minus MRVL",
+        "ratio": -0.1558418532816906,
+        "percentagePoints": -15.58418532816906,
+        "absolutePercentagePoints": 15.58418532816906
+      }
+    },
+    {
+      "sequence": 8,
+      "comparisonId": "networking:dilutedShareChange:anet-minus-mrvl",
+      "pair": {
+        "id": "networking",
+        "label": "Networking and interconnect"
+      },
+      "metric": {
+        "id": "dilutedShareChange",
+        "label": "Diluted share change",
+        "definition": "(current quarter diluted weighted-average shares ÷ prior-year comparable quarter shares) − 1",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "arista-networks",
+        "company": "Arista Networks, Inc.",
+        "ticker": "ANET",
+        "value": 0.0037759597230961894,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q2",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-04T22:08:09.000Z",
+        "accession": "0001596532-26-000175",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000175/anet-20260630.htm",
+        "evidenceSha256": "1be9d99bfba4686935e6b94fa3c93043ca6b0ba3ca49851c9b07169005725345"
+      },
+      "second": {
+        "issuerId": "marvell",
+        "company": "Marvell Technology, Inc.",
+        "ticker": "MRVL",
+        "value": 0.05836397058823528,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q2",
+        "periodEnded": "2026-08-01",
+        "acceptedAt": "2026-08-28T20:04:02.000Z",
+        "accession": "0001835632-26-000025",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1835632/000183563226000025/mrvl-20260801.htm",
+        "evidenceSha256": "f5b6b37fff937f70c7d5bb5a37c74c9a7b1af13a13c541842a55af530d3c6050"
+      },
+      "difference": {
+        "convention": "ANET minus MRVL",
+        "ratio": -0.05458801086513909,
+        "percentagePoints": -5.458801086513909,
+        "absolutePercentagePoints": 5.458801086513909
+      }
+    },
+    {
+      "sequence": 9,
+      "comparisonId": "server-systems:revenueGrowth:smci-minus-dell",
+      "pair": {
+        "id": "server-systems",
+        "label": "Server systems"
+      },
+      "metric": {
+        "id": "revenueGrowth",
+        "label": "Quarterly revenue growth",
+        "definition": "(current quarter revenue ÷ prior-year comparable quarter revenue) − 1",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "value": 0.931552702482286,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q4 reconstruction",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "evidenceSha256": "16ebe5ea9dfef6fc4f00c752203cd5de53f4839636c0ae63ce5a22af29b77998"
+      },
+      "second": {
+        "issuerId": "dell",
+        "company": "Dell Technologies Inc.",
+        "ticker": "DELL",
+        "value": 0.8753528958850201,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q1",
+        "periodEnded": "2026-05-01",
+        "acceptedAt": "2026-06-09T20:11:41.000Z",
+        "accession": "0001571996-26-000030",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm",
+        "evidenceSha256": "e02f2bde168f78ee667589c68ca6401daa6da1be50cbae4bdd707942b19da597"
+      },
+      "difference": {
+        "convention": "SMCI minus DELL",
+        "ratio": 0.05619980659726598,
+        "percentagePoints": 5.619980659726598,
+        "absolutePercentagePoints": 5.619980659726598
+      }
+    },
+    {
+      "sequence": 10,
+      "comparisonId": "server-systems:grossMargin:smci-minus-dell",
+      "pair": {
+        "id": "server-systems",
+        "label": "Server systems"
+      },
+      "metric": {
+        "id": "grossMargin",
+        "label": "Quarterly gross margin",
+        "definition": "current quarter gross profit ÷ current quarter revenue",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "value": 0.17470053581110484,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q4 reconstruction",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "evidenceSha256": "282c8c43295261bade008555245e2720ae3201044f617c1744904e177b0bad63"
+      },
+      "second": {
+        "issuerId": "dell",
+        "company": "Dell Technologies Inc.",
+        "ticker": "DELL",
+        "value": 0.1775010264130286,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q1",
+        "periodEnded": "2026-05-01",
+        "acceptedAt": "2026-06-09T20:11:41.000Z",
+        "accession": "0001571996-26-000030",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm",
+        "evidenceSha256": "18c93e5b559cef37145204a44d1f2c96097be29bf948f7d8d4989c9a9e4dcc11"
+      },
+      "difference": {
+        "convention": "SMCI minus DELL",
+        "ratio": -0.0028004906019237497,
+        "percentagePoints": -0.28004906019237497,
+        "absolutePercentagePoints": 0.28004906019237497
+      }
+    },
+    {
+      "sequence": 11,
+      "comparisonId": "server-systems:rdIntensity:smci-minus-dell",
+      "pair": {
+        "id": "server-systems",
+        "label": "Server systems"
+      },
+      "metric": {
+        "id": "rdIntensity",
+        "label": "Quarterly R&D intensity",
+        "definition": "current quarter research and development expense ÷ current quarter revenue",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "value": 0.018120687132484763,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2026 Q4 reconstruction",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "evidenceSha256": "6c8345590fdc2025a587974000dba94fde45932d4e6568d4deb65a52556bae20"
+      },
+      "second": {
+        "issuerId": "dell",
+        "company": "Dell Technologies Inc.",
+        "ticker": "DELL",
+        "value": 0.02242142238036586,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q1",
+        "periodEnded": "2026-05-01",
+        "acceptedAt": "2026-06-09T20:11:41.000Z",
+        "accession": "0001571996-26-000030",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm",
+        "evidenceSha256": "58870eb3892331578ddd97aeb83f55584400b73b3c9631f0a106b302d900062e"
+      },
+      "difference": {
+        "convention": "SMCI minus DELL",
+        "ratio": -0.004300735247881098,
+        "percentagePoints": -0.4300735247881098,
+        "absolutePercentagePoints": 0.4300735247881098
+      }
+    },
+    {
+      "sequence": 12,
+      "comparisonId": "server-systems:dilutedShareChange:smci-minus-dell",
+      "pair": {
+        "id": "server-systems",
+        "label": "Server systems"
+      },
+      "metric": {
+        "id": "dilutedShareChange",
+        "label": "Diluted share change",
+        "definition": "(current quarter diluted weighted-average shares ÷ prior-year comparable quarter shares) − 1",
+        "unit": "ratio"
+      },
+      "first": {
+        "issuerId": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "value": 0.12859569277267546,
+        "comparabilityTier": "B",
+        "fiscalPeriod": "FY2026 Q4 reconstruction",
+        "periodEnded": "2026-06-30",
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "evidenceSha256": "cba2ff8ea46d54b483e4d0dc6177ca9fad85d5898eab73ffd4e1d422eb9daf13"
+      },
+      "second": {
+        "issuerId": "dell",
+        "company": "Dell Technologies Inc.",
+        "ticker": "DELL",
+        "value": -0.06552706552706555,
+        "comparabilityTier": "A",
+        "fiscalPeriod": "FY2027 Q1",
+        "periodEnded": "2026-05-01",
+        "acceptedAt": "2026-06-09T20:11:41.000Z",
+        "accession": "0001571996-26-000030",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000030/dell-20260501.htm",
+        "evidenceSha256": "54313b23298d0f2e3f9c4d33daa60d36a37470ef626fb659bfaf8a24000a81b1"
+      },
+      "difference": {
+        "convention": "SMCI minus DELL",
+        "ratio": 0.19412275829974102,
+        "percentagePoints": 19.412275829974103,
+        "absolutePercentagePoints": 19.412275829974103
+      }
+    }
+  ],
+  "methodology": {
+    "pairingRule": "Issuers are grouped by adjacent infrastructure role: compute accelerators, networking and interconnect, and server systems.",
+    "comparisonRule": "Each difference is first issuer minus second issuer using the exact stored ratio from the frozen source release; displayed percentage-point values are ratios multiplied by 100.",
+    "evidenceRule": "Every value preserves issuer, fiscal period, period end, SEC acceptance timestamp, accession, filing URL, comparability tier and a SHA-256 of the cell evidence object.",
+    "interpretationRule": "No aggregate score is calculated. Pair observations describe the selected filing values and do not infer causality, valuation or expected return."
+  },
+  "limitations": [
+    "Issuer fiscal-quarter end dates differ, so the comparisons are not synchronized calendar-quarter observations.",
+    "The paired companies occupy related infrastructure roles but do not have identical products, revenue mixes or accounting economics.",
+    "Company-wide filings do not isolate AI-only revenue, gross profit, R&D expense or diluted shares.",
+    "The sample contains six issuers and supports descriptive comparisons only; it is not a statistical factor test.",
+    "The Super Micro diluted-share observation is Tier B because its completed Form 10-K does not separately tag the reconstructed fourth quarter.",
+    "The evidence note is research-only and is not an investment recommendation, security ranking, forecast or accounting opinion."
+  ],
+  "citation": {
+    "text": "AhaSignals. “AI Infrastructure Filing Cross-Section: 2026 Q2 Evidence Note.” ai-infrastructure-peer-pair-evidence-note-2026-q2-v1, published 2026-09-01. https://ahasignals.com/research/ai-infrastructure-filing-cross-section-2026-q2/",
+    "bibtexKey": "AhaSignals2026AIInfrastructurePeerPairEvidenceNote"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving the published object key and array order, without whitespace.",
+    "payloadSha256": "b7c8b7fd8f69b7b99b855fc66892d83b4e283d8f5c3534c121c4aab5c60fd0ee"
+  }
+}

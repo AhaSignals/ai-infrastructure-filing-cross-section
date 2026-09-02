@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahasignals.com/data/filing-delta/cross-section-evidence-note-schema.json",
+  "title": "AhaSignals AI Infrastructure Cross-Section Evidence Note",
+  "description": "Schema for a frozen, pair-level descriptive research note derived from an immutable filing cross-section release.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "schemaUrl",
+    "artifact",
+    "sourceRelease",
+    "question",
+    "finding",
+    "pairSummaries",
+    "claims",
+    "comparisons",
+    "methodology",
+    "limitations",
+    "citation",
+    "integrity"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "schemaUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "pageUrl",
+        "jsonUrl",
+        "csvUrl",
+        "sha256Url",
+        "bibUrl",
+        "publishedAt",
+        "knowledgeCutoff",
+        "license",
+        "creator",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "const": "frozen"
+        }
+      },
+      "additionalProperties": true
+    },
+    "sourceRelease": {
+      "type": "object",
+      "required": [
+        "id",
+        "version",
+        "url",
+        "sha256",
+        "issuerCount",
+        "metricCellCount"
+      ]
+    },
+    "finding": {
+      "type": "object",
+      "required": [
+        "headline",
+        "statement",
+        "boundary"
+      ]
+    },
+    "pairSummaries": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "text",
+          "status",
+          "support"
+        ],
+        "properties": {
+          "status": {
+            "const": "descriptive-observation"
+          }
+        }
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "required": [
+          "sequence",
+          "comparisonId",
+          "pair",
+          "metric",
+          "first",
+          "second",
+          "difference"
+        ]
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "canonicalization",
+        "payloadSha256"
+      ]
+    }
+  }
+}

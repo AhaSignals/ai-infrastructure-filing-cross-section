@@ -1,0 +1,1267 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaUrl": "https://ahasignals.com/data/filing-delta/revision-event-corpus/v1/schema.json",
+  "artifact": {
+    "id": "ai-infrastructure-filing-revision-event-corpus-2026-09-03-v1",
+    "title": "AI Infrastructure Filing Revision Event Corpus",
+    "version": "1.0.0",
+    "canonicalUrl": "https://ahasignals.com/research/ai-infrastructure-filing-revision-event-corpus/",
+    "repositoryUrl": "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section/tree/main/revision-event-corpus/v1",
+    "publishedAt": "2026-09-03",
+    "knowledgeCutoff": "2026-09-01T00:00:00.000Z",
+    "status": "frozen",
+    "license": "CC BY 4.0",
+    "creator": "AhaSignals"
+  },
+  "researchQuestion": "When did a matched filing value or its admissible evidence state become different from the state available to an earlier research decision?",
+  "scope": {
+    "observedIssuerCount": 7,
+    "eventIssuerCount": 2,
+    "noEventObservedIssuerCount": 5,
+    "eventCount": 18,
+    "comparativeValueDifferenceCount": 14,
+    "sourceUpgradeCount": 4,
+    "roundingCompatibleCount": 10,
+    "presentationChangeCount": 4,
+    "signFlipCount": 1,
+    "issuerRestatementCount": 0
+  },
+  "eventDefinition": {
+    "issuerComparativeValueDifference": "A matched fact has a different numerical value in a later issuer comparative filing. This label does not by itself assert error or restatement.",
+    "researchReleaseSourceUpgrade": "A derived value is unchanged while the filing status, evidence object, primary-matrix eligibility or comparability tier changes between frozen research releases.",
+    "noEventBoundary": "No event means no event was detected in the explicitly compared artifacts. It does not mean the issuer has never revised a filing value."
+  },
+  "pointInTimePolicy": {
+    "knowledgeClock": "SEC acceptance timestamp for issuer facts; frozen release cutoff for research-release state.",
+    "selectionRule": "At a decision time, use only the latest eligible state available on or before that time.",
+    "noSilentOverwrite": "Later states and later research releases never replace an earlier frozen object.",
+    "missingDataRule": "Missing or ineligible observations remain unavailable and are never converted to zero."
+  },
+  "coverage": [
+    {
+      "issuerId": "coreweave",
+      "company": "CoreWeave, Inc.",
+      "ticker": "CRWV",
+      "cik": "0001769628",
+      "observationScope": "0001769628-25-000041 to 0001769628-26-000366",
+      "eventCount": 14,
+      "status": "event-observed",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json"
+    },
+    {
+      "issuerId": "nvidia",
+      "company": "NVIDIA Corporation",
+      "ticker": "NVDA",
+      "cik": "0001045810",
+      "observationScope": "ai-infrastructure-cross-section-2026-08-31-v1 to ai-infrastructure-cross-section-2026-09-01-v2",
+      "eventCount": 0,
+      "status": "no-event-in-compared-artifacts",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json"
+    },
+    {
+      "issuerId": "amd",
+      "company": "Advanced Micro Devices, Inc.",
+      "ticker": "AMD",
+      "cik": "0000002488",
+      "observationScope": "ai-infrastructure-cross-section-2026-08-31-v1 to ai-infrastructure-cross-section-2026-09-01-v2",
+      "eventCount": 0,
+      "status": "no-event-in-compared-artifacts",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json"
+    },
+    {
+      "issuerId": "arista-networks",
+      "company": "Arista Networks, Inc.",
+      "ticker": "ANET",
+      "cik": "0001596532",
+      "observationScope": "ai-infrastructure-cross-section-2026-08-31-v1 to ai-infrastructure-cross-section-2026-09-01-v2",
+      "eventCount": 0,
+      "status": "no-event-in-compared-artifacts",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json"
+    },
+    {
+      "issuerId": "marvell",
+      "company": "Marvell Technology, Inc.",
+      "ticker": "MRVL",
+      "cik": "0001835632",
+      "observationScope": "ai-infrastructure-cross-section-2026-08-31-v1 to ai-infrastructure-cross-section-2026-09-01-v2",
+      "eventCount": 0,
+      "status": "no-event-in-compared-artifacts",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json"
+    },
+    {
+      "issuerId": "super-micro",
+      "company": "Super Micro Computer, Inc.",
+      "ticker": "SMCI",
+      "cik": "0001375365",
+      "observationScope": "ai-infrastructure-cross-section-2026-08-31-v1 to ai-infrastructure-cross-section-2026-09-01-v2",
+      "eventCount": 4,
+      "status": "event-observed",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json"
+    },
+    {
+      "issuerId": "dell",
+      "company": "Dell Technologies Inc.",
+      "ticker": "DELL",
+      "cik": "0001571996",
+      "observationScope": "ai-infrastructure-cross-section-2026-08-31-v1 to ai-infrastructure-cross-section-2026-09-01-v2",
+      "eventCount": 0,
+      "status": "no-event-in-compared-artifacts",
+      "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json"
+    }
+  ],
+  "events": [
+    {
+      "eventId": "REV-CRWV-001",
+      "sequence": 1,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "revenue-h1-2025",
+        "label": "Revenue",
+        "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 2194420000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 2194000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -420000,
+        "absoluteDelta": 420000,
+        "relativeDelta": -0.00019139453705307096,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The $0.42 million difference is compatible with the later filing’s million-dollar presentation. It is not labeled here as a restatement."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "revenue-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-002",
+      "sequence": 2,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "operating-cash-flow-h1-2025",
+        "label": "Operating cash flow",
+        "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": -190083000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": -190000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 83000,
+        "absoluteDelta": 83000,
+        "relativeDelta": 0.00043665135756485325,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The later comparative value is consistent with rounding the first-reported value to the nearest million."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "operating-cash-flow-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-003",
+      "sequence": 3,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "capex-h1-2025",
+        "label": "Purchases of property and equipment",
+        "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 3860351000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 3860000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -351000,
+        "absoluteDelta": 351000,
+        "relativeDelta": -0.00009092437449340746,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The $0.351 million difference is compatible with the later filing’s million-dollar presentation."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "capex-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-004",
+      "sequence": 4,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "sbc-h1-2025",
+        "label": "Stock-based compensation",
+        "taxonomy": "us-gaap:ShareBasedCompensation",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 328978000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 329000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 22000,
+        "absoluteDelta": 22000,
+        "relativeDelta": 0.00006687377271428485,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The later filing presents the same period at lower precision; the difference is $0.022 million."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "sbc-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-005",
+      "sequence": 5,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "diluted-shares-h1-2025",
+        "label": "Diluted weighted-average shares",
+        "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "unit": "shares",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 368607000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 369000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 393000,
+        "absoluteDelta": 393000,
+        "relativeDelta": 0.0010661761713695074,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The later filing rounds the weighted-average share count to the nearest million shares."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "diluted-shares-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-006",
+      "sequence": 6,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "ipo-proceeds-h1-2025",
+        "label": "IPO proceeds, net of underwriting discounts and commissions",
+        "taxonomy": "us-gaap:ProceedsFromIssuanceInitialPublicOffering",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 1422619000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 1491000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 68381000,
+        "absoluteDelta": 68381000,
+        "relativeDelta": 0.0480669806884345,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The $68.381 million increase is larger than a rounding effect. The later filing is the source for the changed comparative amount; this record does not infer a formal restatement."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "ipo-proceeds-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-007",
+      "sequence": 7,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "debt-proceeds-h1-2025",
+        "label": "Proceeds from issuance of debt",
+        "taxonomy": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 4432723000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 4396000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -36723000,
+        "absoluteDelta": 36723000,
+        "relativeDelta": -0.008284523982211385,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The later comparative amount is $36.723 million lower and its filing label adds “net.” Treat the two values as separate filed versions."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "debt-proceeds-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-008",
+      "sequence": 8,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "other-investing-h1-2025",
+        "label": "Other investing activities",
+        "taxonomy": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 26109000,
+        "acceptedAt": "2025-08-12T22:18:48Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": -6000000,
+        "acceptedAt": "2026-08-11T23:24:42Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -32109000,
+        "absoluteDelta": 32109000,
+        "relativeDelta": -1.2298058140870964,
+        "signChanged": true,
+        "sourceStatusChanged": false,
+        "classification": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The XBRL value changes from positive $26.109 million to negative $6 million. The two accessions are preserved because the sign and amount both changed."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48Z",
+        "laterEligibleAt": "2026-08-11T23:24:42Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": [
+          "AS-PIT-002"
+        ]
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "other-investing-h1-2025",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-009",
+      "sequence": 9,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "cost-of-revenue-2025-01-01-2025-06-30",
+        "label": "Cost of revenue",
+        "taxonomy": "us-gaap:CostOfGoodsAndServicesSold",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 575061000,
+        "acceptedAt": "2025-08-12T22:18:48.000Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 575000000,
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -61000,
+        "absoluteDelta": 61000,
+        "relativeDelta": -0.00010607570327321797,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48.000Z",
+        "laterEligibleAt": "2026-08-11T23:24:42.000Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "cost-of-revenue-2025-01-01-2025-06-30",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-010",
+      "sequence": 10,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "cost-of-revenue-2025-04-01-2025-06-30",
+        "label": "Cost of revenue",
+        "taxonomy": "us-gaap:CostOfGoodsAndServicesSold",
+        "unit": "USD",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 312667000,
+        "acceptedAt": "2025-08-12T22:18:48.000Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 313000000,
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 333000,
+        "absoluteDelta": 333000,
+        "relativeDelta": 0.0010650308475150879,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48.000Z",
+        "laterEligibleAt": "2026-08-11T23:24:42.000Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "cost-of-revenue-2025-04-01-2025-06-30",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-011",
+      "sequence": 11,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "operating-income-loss-2025-01-01-2025-06-30",
+        "label": "Operating income (loss)",
+        "taxonomy": "us-gaap:OperatingIncomeLoss",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": -8261000,
+        "acceptedAt": "2025-08-12T22:18:48.000Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": -8000000,
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 261000,
+        "absoluteDelta": 261000,
+        "relativeDelta": 0.03159423798571601,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48.000Z",
+        "laterEligibleAt": "2026-08-11T23:24:42.000Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "operating-income-loss-2025-01-01-2025-06-30",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-012",
+      "sequence": 12,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "operating-income-loss-2025-04-01-2025-06-30",
+        "label": "Operating income (loss)",
+        "taxonomy": "us-gaap:OperatingIncomeLoss",
+        "unit": "USD",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 19209000,
+        "acceptedAt": "2025-08-12T22:18:48.000Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 19000000,
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -209000,
+        "absoluteDelta": 209000,
+        "relativeDelta": -0.010880316518298714,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48.000Z",
+        "laterEligibleAt": "2026-08-11T23:24:42.000Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "operating-income-loss-2025-04-01-2025-06-30",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-013",
+      "sequence": 13,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "revenue-2025-04-01-2025-06-30",
+        "label": "Revenue",
+        "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 1212788000,
+        "acceptedAt": "2025-08-12T22:18:48.000Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 1212000000,
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": -788000,
+        "absoluteDelta": 788000,
+        "relativeDelta": -0.0006497425766086076,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The later filing presents $1,212 million for the quarter first reported as $1,212.788 million. The difference exceeds standard nearest-million rounding. The issuer says some prior-period amounts may differ by insignificant amounts after changing presentation from thousands to millions; this record preserves both versions and does not infer a formal restatement."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48.000Z",
+        "laterEligibleAt": "2026-08-11T23:24:42.000Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": [
+          "AS-PIT-001"
+        ]
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "revenue-2025-04-01-2025-06-30",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-CRWV-014",
+      "sequence": 14,
+      "eventKind": "issuer-comparative-value-difference",
+      "issuer": {
+        "id": "coreweave",
+        "company": "CoreWeave, Inc.",
+        "ticker": "CRWV",
+        "cik": "0001769628"
+      },
+      "metric": {
+        "id": "diluted-weighted-average-shares-2025-04-01-2025-06-30",
+        "label": "Diluted weighted-average shares",
+        "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "unit": "shares",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "priorState": {
+        "value": 486591000,
+        "acceptedAt": "2025-08-12T22:18:48.000Z",
+        "accession": "0001769628-25-000041",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+        "sourceRole": "first-reported",
+        "reportedPrecision": "thousand"
+      },
+      "laterState": {
+        "value": 487000000,
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "accession": "0001769628-26-000366",
+        "form": "10-Q",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "sourceRole": "later-comparative",
+        "reportedPrecision": "million"
+      },
+      "change": {
+        "valueChanged": true,
+        "delta": 409000,
+        "absoluteDelta": 409000,
+        "relativeDelta": 0.000840541645858637,
+        "signChanged": false,
+        "sourceStatusChanged": false,
+        "classification": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2025-08-12T22:18:48.000Z",
+        "laterEligibleAt": "2026-08-11T23:24:42.000Z",
+        "selectionRule": "Use the latest matched source state whose SEC acceptance timestamp is on or before the decision time.",
+        "relatedBenchmarkCaseIds": []
+      },
+      "lineage": {
+        "sourceArtifactId": "crwv-revision-ledger-2026-q2-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+        "sourceEntryId": "diluted-weighted-average-shares-2025-04-01-2025-06-30",
+        "sourceArtifactPayloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+      }
+    },
+    {
+      "eventId": "REV-SMCI-001",
+      "sequence": 15,
+      "eventKind": "research-release-source-upgrade",
+      "issuer": {
+        "id": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "cik": "0001375365"
+      },
+      "metric": {
+        "id": "revenueGrowth",
+        "label": "Quarterly revenue growth",
+        "taxonomy": null,
+        "unit": "ratio",
+        "periodStart": null,
+        "periodEnd": "2026-06-30"
+      },
+      "priorState": {
+        "value": 0.931552702482286,
+        "acceptedAt": "2026-08-11T20:06:16.000Z",
+        "accession": "0001375365-26-000021",
+        "form": "8-K exhibit",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000021/exhibit991_20260630.htm",
+        "sourceRole": "preliminary",
+        "reportedPrecision": null,
+        "comparabilityTier": "C",
+        "primaryMatrixEligible": false,
+        "evidenceSha256": "5e7b73ef31762f20f980771aedf33fa59afe44e8c8e0d409bf606df58356f6b4"
+      },
+      "laterState": {
+        "value": 0.931552702482286,
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "form": "10-K",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "sourceRole": "filed",
+        "reportedPrecision": null,
+        "comparabilityTier": "A",
+        "primaryMatrixEligible": true,
+        "evidenceSha256": "16ebe5ea9dfef6fc4f00c752203cd5de53f4839636c0ae63ce5a22af29b77998"
+      },
+      "change": {
+        "valueChanged": false,
+        "delta": 0,
+        "absoluteDelta": 0,
+        "relativeDelta": null,
+        "signChanged": false,
+        "sourceStatusChanged": true,
+        "classification": "source-upgraded",
+        "authority": "deterministic-release-comparison",
+        "interpretation": "The value is unchanged. Its provenance moved from C to A as annual and nine-month filed facts replaced the preliminary exhibit as the reconstruction path."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2026-08-29T00:00:00.000Z",
+        "laterEligibleAt": "2026-09-01T00:00:00.000Z",
+        "selectionRule": "Keep the preliminary release state before the completed filing; admit the later evidence state only from its release cutoff.",
+        "relatedBenchmarkCaseIds": [
+          "AS-PIT-003",
+          "AS-PIT-004"
+        ]
+      },
+      "lineage": {
+        "sourceArtifactId": "ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json",
+        "sourceEntryId": "super-micro:revenueGrowth",
+        "sourceArtifactPayloadSha256": "ee7bc609915a2be3767216d39f1f32dde392f2c60928ba36af75828c92213d75"
+      }
+    },
+    {
+      "eventId": "REV-SMCI-002",
+      "sequence": 16,
+      "eventKind": "research-release-source-upgrade",
+      "issuer": {
+        "id": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "cik": "0001375365"
+      },
+      "metric": {
+        "id": "grossMargin",
+        "label": "Quarterly gross margin",
+        "taxonomy": null,
+        "unit": "ratio",
+        "periodStart": null,
+        "periodEnd": "2026-06-30"
+      },
+      "priorState": {
+        "value": 0.17470053581110484,
+        "acceptedAt": "2026-08-11T20:06:16.000Z",
+        "accession": "0001375365-26-000021",
+        "form": "8-K exhibit",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000021/exhibit991_20260630.htm",
+        "sourceRole": "preliminary",
+        "reportedPrecision": null,
+        "comparabilityTier": "C",
+        "primaryMatrixEligible": false,
+        "evidenceSha256": "79c46dd3946c917c734de0fa6a65c42a83955a18766248b128e49754b1a4a1ad"
+      },
+      "laterState": {
+        "value": 0.17470053581110484,
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "form": "10-K",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "sourceRole": "filed",
+        "reportedPrecision": null,
+        "comparabilityTier": "A",
+        "primaryMatrixEligible": true,
+        "evidenceSha256": "282c8c43295261bade008555245e2720ae3201044f617c1744904e177b0bad63"
+      },
+      "change": {
+        "valueChanged": false,
+        "delta": 0,
+        "absoluteDelta": 0,
+        "relativeDelta": null,
+        "signChanged": false,
+        "sourceStatusChanged": true,
+        "classification": "source-upgraded",
+        "authority": "deterministic-release-comparison",
+        "interpretation": "The value is unchanged. Its provenance moved from C to A as annual and nine-month filed facts replaced the preliminary exhibit as the reconstruction path."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2026-08-29T00:00:00.000Z",
+        "laterEligibleAt": "2026-09-01T00:00:00.000Z",
+        "selectionRule": "Keep the preliminary release state before the completed filing; admit the later evidence state only from its release cutoff.",
+        "relatedBenchmarkCaseIds": [
+          "AS-PIT-003"
+        ]
+      },
+      "lineage": {
+        "sourceArtifactId": "ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json",
+        "sourceEntryId": "super-micro:grossMargin",
+        "sourceArtifactPayloadSha256": "ee7bc609915a2be3767216d39f1f32dde392f2c60928ba36af75828c92213d75"
+      }
+    },
+    {
+      "eventId": "REV-SMCI-003",
+      "sequence": 17,
+      "eventKind": "research-release-source-upgrade",
+      "issuer": {
+        "id": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "cik": "0001375365"
+      },
+      "metric": {
+        "id": "rdIntensity",
+        "label": "Quarterly R&D intensity",
+        "taxonomy": null,
+        "unit": "ratio",
+        "periodStart": null,
+        "periodEnd": "2026-06-30"
+      },
+      "priorState": {
+        "value": 0.018120687132484763,
+        "acceptedAt": "2026-08-11T20:06:16.000Z",
+        "accession": "0001375365-26-000021",
+        "form": "8-K exhibit",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000021/exhibit991_20260630.htm",
+        "sourceRole": "preliminary",
+        "reportedPrecision": null,
+        "comparabilityTier": "C",
+        "primaryMatrixEligible": false,
+        "evidenceSha256": "391b9194d16052a4269dccc2590ed99cbe8b404e60164c1ada0064d395771cd6"
+      },
+      "laterState": {
+        "value": 0.018120687132484763,
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "form": "10-K",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "sourceRole": "filed",
+        "reportedPrecision": null,
+        "comparabilityTier": "A",
+        "primaryMatrixEligible": true,
+        "evidenceSha256": "6c8345590fdc2025a587974000dba94fde45932d4e6568d4deb65a52556bae20"
+      },
+      "change": {
+        "valueChanged": false,
+        "delta": 0,
+        "absoluteDelta": 0,
+        "relativeDelta": null,
+        "signChanged": false,
+        "sourceStatusChanged": true,
+        "classification": "source-upgraded",
+        "authority": "deterministic-release-comparison",
+        "interpretation": "The value is unchanged. Its provenance moved from C to A as annual and nine-month filed facts replaced the preliminary exhibit as the reconstruction path."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2026-08-29T00:00:00.000Z",
+        "laterEligibleAt": "2026-09-01T00:00:00.000Z",
+        "selectionRule": "Keep the preliminary release state before the completed filing; admit the later evidence state only from its release cutoff.",
+        "relatedBenchmarkCaseIds": [
+          "AS-PIT-003"
+        ]
+      },
+      "lineage": {
+        "sourceArtifactId": "ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json",
+        "sourceEntryId": "super-micro:rdIntensity",
+        "sourceArtifactPayloadSha256": "ee7bc609915a2be3767216d39f1f32dde392f2c60928ba36af75828c92213d75"
+      }
+    },
+    {
+      "eventId": "REV-SMCI-004",
+      "sequence": 18,
+      "eventKind": "research-release-source-upgrade",
+      "issuer": {
+        "id": "super-micro",
+        "company": "Super Micro Computer, Inc.",
+        "ticker": "SMCI",
+        "cik": "0001375365"
+      },
+      "metric": {
+        "id": "dilutedShareChange",
+        "label": "Diluted share change",
+        "taxonomy": null,
+        "unit": "ratio",
+        "periodStart": null,
+        "periodEnd": "2026-06-30"
+      },
+      "priorState": {
+        "value": 0.12859569277267546,
+        "acceptedAt": "2026-08-11T20:06:16.000Z",
+        "accession": "0001375365-26-000021",
+        "form": "8-K exhibit",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000021/exhibit991_20260630.htm",
+        "sourceRole": "preliminary",
+        "reportedPrecision": null,
+        "comparabilityTier": "C",
+        "primaryMatrixEligible": false,
+        "evidenceSha256": "2642545ea803244591aeae06cc68d05525582910c4b5e45d4ca8f186a48f195a"
+      },
+      "laterState": {
+        "value": 0.12859569277267546,
+        "acceptedAt": "2026-08-31T14:21:23.000Z",
+        "accession": "0001375365-26-000022",
+        "form": "10-K",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1375365/000137536526000022/smci-20260630.htm",
+        "sourceRole": "filed",
+        "reportedPrecision": null,
+        "comparabilityTier": "B",
+        "primaryMatrixEligible": true,
+        "evidenceSha256": "cba2ff8ea46d54b483e4d0dc6177ca9fad85d5898eab73ffd4e1d422eb9daf13"
+      },
+      "change": {
+        "valueChanged": false,
+        "delta": 0,
+        "absoluteDelta": 0,
+        "relativeDelta": null,
+        "signChanged": false,
+        "sourceStatusChanged": true,
+        "classification": "source-upgraded",
+        "authority": "deterministic-release-comparison",
+        "interpretation": "The value and underlying earnings exhibit are unchanged. The completed filing admits the issuer to the primary matrix, while this cell remains tied to the earlier exhibit and therefore stays below Tier A."
+      },
+      "pointInTimePolicy": {
+        "priorEligibleAt": "2026-08-29T00:00:00.000Z",
+        "laterEligibleAt": "2026-09-01T00:00:00.000Z",
+        "selectionRule": "Keep the preliminary release state before the completed filing; admit the later evidence state only from its release cutoff.",
+        "relatedBenchmarkCaseIds": [
+          "AS-PIT-003"
+        ]
+      },
+      "lineage": {
+        "sourceArtifactId": "ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1",
+        "sourceArtifactUrl": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json",
+        "sourceEntryId": "super-micro:dilutedShareChange",
+        "sourceArtifactPayloadSha256": "ee7bc609915a2be3767216d39f1f32dde392f2c60928ba36af75828c92213d75"
+      }
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "id": "crwv-revision-ledger-2026-q2-v1",
+      "url": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+      "payloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+    },
+    {
+      "id": "ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1",
+      "url": "https://ahasignals.com/data/filing-delta/cross-section/revision-ledgers/ai-infrastructure-cross-section-v1-to-v2-2026-09-01-v1.json",
+      "payloadSha256": "ee7bc609915a2be3767216d39f1f32dde392f2c60928ba36af75828c92213d75"
+    }
+  ],
+  "relatedBenchmark": {
+    "id": "ahasignals-pit-backtest-validation-benchmark-v1",
+    "version": "1.0.0",
+    "url": "https://ahasignals.com/research/point-in-time-backtest-validation-benchmark/",
+    "doi": "10.5281/zenodo.22279744",
+    "relationship": "Corpus events expose the source transitions exercised by benchmark cases AS-PIT-001 through AS-PIT-004. The benchmark remains a separate frozen object."
+  },
+  "limitations": [
+    "Version 1 is an event corpus over two explicitly defined comparisons, not a complete history of every filing by every observed issuer.",
+    "A comparative value difference is not automatically an error, accounting correction or issuer-identified restatement.",
+    "Five observed issuers have no event in the compared cross-section releases; this is not evidence that they have never revised a filing value.",
+    "The corpus tests data lineage and availability. It does not estimate alpha, information coefficient, portfolio return, Sharpe ratio or drawdown.",
+    "Company names and ticker symbols identify source filers only. AhaSignals is independent and is not affiliated with or endorsed by the issuers or the SEC.",
+    "Research and education only; not investment, trading, legal, accounting or tax advice."
+  ],
+  "citation": {
+    "text": "AhaSignals. “AI Infrastructure Filing Revision Event Corpus.” Version 1.0.0, published 2026-09-03. https://ahasignals.com/research/ai-infrastructure-filing-revision-event-corpus/",
+    "bibtexKey": "AhaSignals2026FilingRevisionEventCorpus"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving published object key and array order, without whitespace.",
+    "payloadSha256": "cb3b01311df5769c014145b3d93f9cc5e0a78f2f85af5b1698c6347c55b62de0"
+  }
+}

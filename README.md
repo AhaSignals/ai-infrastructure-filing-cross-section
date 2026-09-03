@@ -51,6 +51,18 @@ Source release JSON SHA-256:
 
 The Evidence Note JSON and source release JSON are frozen. A later observation must create a new version; it must not overwrite these files.
 
+## Filing Revision Event Corpus
+
+The repository also carries a separate frozen event corpus at [`revision-event-corpus/v1/`](revision-event-corpus/v1/). Version 1 preserves 18 source-dated transitions across seven observed issuers:
+
+- 14 matched CoreWeave values that differ between two SEC Form 10-Q accessions;
+- 4 Super Micro values that remain numerically unchanged while their evidence state or comparability changes;
+- explicit scoped no-event coverage for the other five observed issuers.
+
+The corpus connects source transitions to cases AS-PIT-001 through AS-PIT-004 in the separately frozen [Point-in-Time Backtest Validation Benchmark](https://github.com/AhaSignals/pit-backtest-validation-benchmark). It does not rewrite the Evidence Note or its v1.0.0 release files.
+
+Run `bash revision-event-corpus/v1/verify-corpus.sh` to verify every file checksum and the fixed coverage and event counts.
+
 ## Method
 
 Issuers are grouped by adjacent infrastructure role: compute accelerators, networking and interconnect, and server systems.

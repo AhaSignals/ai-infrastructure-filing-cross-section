@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahasignals.com/data/filing-delta/revision-event-corpus/v1/schema.json",
+  "title": "AhaSignals Filing Revision Event Corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "schemaUrl",
+    "artifact",
+    "researchQuestion",
+    "scope",
+    "eventDefinition",
+    "pointInTimePolicy",
+    "coverage",
+    "events",
+    "sourceArtifacts",
+    "relatedBenchmark",
+    "limitations",
+    "citation",
+    "integrity"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "schemaUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "version",
+        "canonicalUrl",
+        "publishedAt",
+        "knowledgeCutoff",
+        "status",
+        "license",
+        "creator"
+      ]
+    },
+    "researchQuestion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "observedIssuerCount",
+        "eventIssuerCount",
+        "noEventObservedIssuerCount",
+        "eventCount",
+        "comparativeValueDifferenceCount",
+        "sourceUpgradeCount"
+      ]
+    },
+    "eventDefinition": {
+      "type": "object"
+    },
+    "pointInTimePolicy": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": [
+          "issuerId",
+          "company",
+          "ticker",
+          "cik",
+          "observationScope",
+          "eventCount",
+          "status",
+          "sourceArtifactUrl"
+        ]
+      }
+    },
+    "events": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "eventId",
+          "sequence",
+          "eventKind",
+          "issuer",
+          "metric",
+          "priorState",
+          "laterState",
+          "change",
+          "pointInTimePolicy",
+          "lineage"
+        ],
+        "properties": {
+          "eventId": {
+            "type": "string",
+            "pattern": "^REV-[A-Z]+-[0-9]{3}$"
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "eventKind": {
+            "enum": [
+              "issuer-comparative-value-difference",
+              "research-release-source-upgrade"
+            ]
+          },
+          "issuer": {
+            "type": "object",
+            "required": [
+              "id",
+              "company",
+              "ticker",
+              "cik"
+            ]
+          },
+          "metric": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "unit"
+            ]
+          },
+          "priorState": {
+            "type": "object",
+            "required": [
+              "value",
+              "acceptedAt",
+              "accession",
+              "form",
+              "filingUrl",
+              "sourceRole"
+            ]
+          },
+          "laterState": {
+            "type": "object",
+            "required": [
+              "value",
+              "acceptedAt",
+              "accession",
+              "form",
+              "filingUrl",
+              "sourceRole"
+            ]
+          },
+          "change": {
+            "type": "object",
+            "required": [
+              "valueChanged",
+              "delta",
+              "absoluteDelta",
+              "signChanged",
+              "sourceStatusChanged",
+              "classification",
+              "authority",
+              "interpretation"
+            ]
+          },
+          "pointInTimePolicy": {
+            "type": "object",
+            "required": [
+              "priorEligibleAt",
+              "laterEligibleAt",
+              "selectionRule",
+              "relatedBenchmarkCaseIds"
+            ]
+          },
+          "lineage": {
+            "type": "object",
+            "required": [
+              "sourceArtifactId",
+              "sourceArtifactUrl",
+              "sourceEntryId",
+              "sourceArtifactPayloadSha256"
+            ]
+          }
+        }
+      }
+    },
+    "sourceArtifacts": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "relatedBenchmark": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "citation": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "canonicalization",
+        "payloadSha256"
+      ]
+    }
+  }
+}

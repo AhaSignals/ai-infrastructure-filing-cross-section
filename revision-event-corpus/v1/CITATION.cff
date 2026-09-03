@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this corpus, cite the frozen version and retain its source lineage."
+type: dataset
+title: "AI Infrastructure Filing Revision Event Corpus"
+version: 1.0.0
+date-released: 2026-09-03
+authors:
+  - name: AhaSignals
+license: CC-BY-4.0
+url: "https://ahasignals.com/research/ai-infrastructure-filing-revision-event-corpus/"
+repository: "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section/tree/main/revision-event-corpus/v1"
+abstract: "Eighteen source-dated events that preserve matched filing-value differences and evidence-state upgrades across seven observed U.S.-listed AI-infrastructure issuers."
+keywords:
+  - point-in-time financial data
+  - filing revisions
+  - SEC filings
+  - backtest validation
+  - data lineage

@@ -1,6 +1,7 @@
 # How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study
 
 - Version: 1.0.0
+- DOI: https://doi.org/10.5281/zenodo.22288550
 - Publisher: AhaSignals
 - Published: 2026-09-04
 - License: CC BY 4.0

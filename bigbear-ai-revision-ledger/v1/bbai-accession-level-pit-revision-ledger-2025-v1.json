@@ -5,6 +5,8 @@
     "id": "bbai-accession-level-pit-revision-ledger-2025-v1",
     "title": "BigBear.ai Accession-Level Point-in-Time Revision Ledger — 2025 Restatement",
     "version": "1.0.0",
+    "doi": "10.5281/zenodo.22288546",
+    "doiUrl": "https://doi.org/10.5281/zenodo.22288546",
     "pageUrl": "https://ahasignals.com/filing-delta/bigbear-ai/revisions/2025-restatement/",
     "jsonUrl": "https://ahasignals.com/data/filing-delta/bigbear-ai/revision-ledgers/bbai-accession-level-pit-revision-ledger-2025-v1.json",
     "csvUrl": "https://ahasignals.com/data/filing-delta/bigbear-ai/revision-ledgers/bbai-accession-level-pit-revision-ledger-2025-v1.csv",
@@ -9059,12 +9061,12 @@
     "Research and education only; not investment, trading, legal, accounting or tax advice."
   ],
   "citation": {
-    "text": "AhaSignals. “BigBear.ai Accession-Level Point-in-Time Revision Ledger — 2025 Restatement.” Version 1.0.0, published 2026-09-04. https://ahasignals.com/filing-delta/bigbear-ai/revisions/2025-restatement/",
+    "text": "AhaSignals. “BigBear.ai Accession-Level Point-in-Time Revision Ledger — 2025 Restatement.” Version 1.0.0, published 2026-09-04. https://doi.org/10.5281/zenodo.22288546",
     "bibtexKey": "AhaSignals2026BigBearAiPITRevisionLedger"
   },
   "integrity": {
     "algorithm": "SHA-256",
     "canonicalization": "UTF-8 JSON.stringify(payload), preserving published object key and array order, without whitespace.",
-    "payloadSha256": "a7e2d6b0bf868fbb853a6b9decff34bcbd6c61f4d3ea2f0e859c80803a399641"
+    "payloadSha256": "c2cc8c520bd5ca9eae5891f0e61465a3e59bbb246562e028bc2f2221885f0122"
   }
 }

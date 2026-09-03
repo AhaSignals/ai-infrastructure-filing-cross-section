@@ -3,11 +3,12 @@ message: "If you use this case study, cite this version and its frozen upstream 
 title: "How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study"
 type: dataset
 version: 1.0.0
+doi: 10.5281/zenodo.22288550
 date-released: 2026-09-04
 authors:
   - name: AhaSignals
 license: CC-BY-4.0
-url: "https://ahasignals.com/research/how-later-sec-comparatives-leak-into-historical-backtests/"
+url: "https://doi.org/10.5281/zenodo.22288550"
 repository-code: "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section/tree/main/case-studies/coreweave-later-comparatives-v1"
 abstract: "A reproducible data-integrity case study showing how a latest-value overwrite returns later SEC comparatives for an earlier historical decision time."
 keywords:

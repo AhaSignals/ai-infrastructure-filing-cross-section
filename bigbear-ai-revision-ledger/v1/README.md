@@ -1,6 +1,7 @@
 # BigBear.ai Accession-Level PIT Revision Ledger — 2025 Restatement
 
 - Version: 1.0.0
+- DOI: https://doi.org/10.5281/zenodo.22288546
 - Publisher: AhaSignals
 - Published: 2026-09-04
 - License: CC BY 4.0

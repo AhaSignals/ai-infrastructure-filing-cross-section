@@ -33,6 +33,8 @@
         "id",
         "title",
         "version",
+        "doi",
+        "doiUrl",
         "pageUrl",
         "jsonUrl",
         "csvUrl",

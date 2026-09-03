@@ -3,11 +3,12 @@ message: "If you use this ledger, cite this version and preserve its SEC source 
 title: "BigBear.ai Accession-Level Point-in-Time Revision Ledger — 2025 Restatement"
 type: dataset
 version: 1.0.0
+doi: 10.5281/zenodo.22288546
 date-released: 2026-09-04
 authors:
   - name: AhaSignals
 license: CC-BY-4.0
-url: "https://ahasignals.com/filing-delta/bigbear-ai/revisions/2025-restatement/"
+url: "https://doi.org/10.5281/zenodo.22288546"
 repository-code: "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section/tree/main/bigbear-ai-revision-ledger/v1"
 abstract: "A frozen 160-cell issuer-restatement ledger preserving previously reported, non-reliance and restated knowledge states by SEC accession and acceptance time."
 keywords:

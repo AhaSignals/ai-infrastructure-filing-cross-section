@@ -4,6 +4,8 @@
     "id": "coreweave-later-sec-comparatives-leakage-case-study-2026-v1",
     "title": "How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study",
     "version": "1.0.0",
+    "doi": "10.5281/zenodo.22288550",
+    "doiUrl": "https://doi.org/10.5281/zenodo.22288550",
     "pageUrl": "https://ahasignals.com/research/how-later-sec-comparatives-leak-into-historical-backtests/",
     "jsonUrl": "https://ahasignals.com/data/research/case-studies/coreweave-later-comparatives-v1.json",
     "csvUrl": "https://ahasignals.com/data/research/case-studies/coreweave-later-comparatives-v1.csv",
@@ -151,12 +153,12 @@
     "Research and education only; not investment, trading, legal, accounting or tax advice."
   ],
   "citation": {
-    "text": "AhaSignals. “How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study.” Version 1.0.0, published 2026-09-04. https://ahasignals.com/research/how-later-sec-comparatives-leak-into-historical-backtests/",
+    "text": "AhaSignals. “How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study.” Version 1.0.0, published 2026-09-04. https://doi.org/10.5281/zenodo.22288550",
     "bibtexKey": "AhaSignals2026CoreWeaveComparativeLeakage"
   },
   "integrity": {
     "algorithm": "SHA-256",
     "canonicalization": "UTF-8 JSON.stringify(payload), preserving published object key and array order, without whitespace.",
-    "payloadSha256": "54b2afb6cd28aa9eb7383c5c2fcf45afa2c60395a9f8086258f1d11a5a4e1f10"
+    "payloadSha256": "9f23f1fe69e9966851fc0c30b649b5acca3ae65844348d46037b56f69c66e1c1"
   }
 }

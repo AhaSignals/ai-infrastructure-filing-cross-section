@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifact": {
+    "id": "coreweave-later-sec-comparatives-leakage-case-study-2026-v1",
+    "title": "How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study",
+    "version": "1.0.0",
+    "pageUrl": "https://ahasignals.com/research/how-later-sec-comparatives-leak-into-historical-backtests/",
+    "jsonUrl": "https://ahasignals.com/data/research/case-studies/coreweave-later-comparatives-v1.json",
+    "csvUrl": "https://ahasignals.com/data/research/case-studies/coreweave-later-comparatives-v1.csv",
+    "bibUrl": "https://ahasignals.com/data/research/case-studies/coreweave-later-comparatives-v1.bib",
+    "checksumUrl": "https://ahasignals.com/data/research/case-studies/coreweave-later-comparatives-v1.sha256",
+    "repositoryUrl": "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section/tree/main/case-studies/coreweave-later-comparatives-v1",
+    "publishedAt": "2026-09-04",
+    "knowledgeCutoff": "2026-08-29T13:32:00.000Z",
+    "status": "frozen",
+    "license": "CC BY 4.0",
+    "creator": "AhaSignals"
+  },
+  "subject": {
+    "company": "CoreWeave, Inc.",
+    "ticker": "CRWV",
+    "cik": "0001769628"
+  },
+  "researchQuestion": "What changes in a historical 2025 query when a warehouse silently overwrites first-reported values with comparatives accepted in 2026?",
+  "testDesign": {
+    "decisionTime": "2025-08-13T13:30:00.000Z",
+    "firstSourceAccession": "0001769628-25-000041",
+    "firstSourceAcceptedAt": "2025-08-12T22:18:48Z",
+    "laterSourceAccession": "0001769628-26-000366",
+    "laterSourceAcceptedAt": "2026-08-11T23:24:42Z",
+    "destructiveWarehouseKey": [
+      "cik",
+      "taxonomy",
+      "unit",
+      "periodStart",
+      "periodEnd"
+    ],
+    "contaminatedRule": "Select the latest stored value without constraining SEC acceptance time to the historical decision time.",
+    "pointInTimeRule": "Select the latest source vintage with acceptedAt less than or equal to decisionTime.",
+    "scope": "Fourteen selected facts that have exact taxonomy, unit and period identity in both accessions. This is a data-integrity case study, not a portfolio-return backtest."
+  },
+  "findings": {
+    "matchedFactCount": 14,
+    "contaminatedFactCountUnderLatestValueOverwrite": 14,
+    "contaminatedFactRate": 1,
+    "roundingCompatibleCount": 10,
+    "presentationChangeCount": 4,
+    "signFlipCount": 1,
+    "issuerRestatementCount": 0,
+    "conclusion": "A warehouse that stores one value per fact identity cannot answer what was known in 2025. It returns 14 values from a filing accepted in 2026; four exceed the disclosed rounding gate and one reverses sign."
+  },
+  "derivedEffects": [
+    {
+      "effectId": "CRWV-LEAK-REV-Q2",
+      "label": "Q2 2025 revenue",
+      "formula": "reported revenue",
+      "unit": "USD",
+      "correctAsOfValue": 1212788000,
+      "leakedLaterValue": 1212000000,
+      "difference": -788000,
+      "interpretation": "A destructive latest-value warehouse understates the revenue value available to the 2025 decision by $0.788 million.",
+      "sourceEntryIds": [
+        "revenue-2025-04-01-2025-06-30"
+      ]
+    },
+    {
+      "effectId": "CRWV-LEAK-OTHER-INVESTING",
+      "label": "Other investing activities",
+      "formula": "reported other investing activities",
+      "unit": "USD",
+      "correctAsOfValue": 26109000,
+      "leakedLaterValue": -6000000,
+      "difference": -32109000,
+      "interpretation": "The leaked comparative reverses the sign from a positive $26.109 million to a negative $6 million.",
+      "sourceEntryIds": [
+        "other-investing-h1-2025"
+      ]
+    },
+    {
+      "effectId": "CRWV-LEAK-GROSS-MARGIN-Q2",
+      "label": "Q2 2025 gross margin",
+      "formula": "(revenue − cost of revenue) ÷ revenue",
+      "unit": "ratio",
+      "correctAsOfValue": 0.7421915454308585,
+      "leakedLaterValue": 0.7417491749174917,
+      "difference": -0.00044237051336681876,
+      "interpretation": "Two small input changes alter the reconstructed historical margin even though the economic period is unchanged.",
+      "sourceEntryIds": [
+        "revenue-2025-04-01-2025-06-30",
+        "cost-of-revenue-2025-04-01-2025-06-30"
+      ]
+    },
+    {
+      "effectId": "CRWV-LEAK-FCF-PROXY-H1",
+      "label": "H1 2025 operating cash flow less capital expenditure",
+      "formula": "operating cash flow − purchases of property and equipment",
+      "unit": "USD",
+      "correctAsOfValue": -4050434000,
+      "leakedLaterValue": -4050000000,
+      "difference": 434000,
+      "interpretation": "The derived cash-flow proxy shifts by $0.434 million when both historical inputs are silently replaced.",
+      "sourceEntryIds": [
+        "operating-cash-flow-h1-2025",
+        "capex-h1-2025"
+      ]
+    },
+    {
+      "effectId": "CRWV-LEAK-SBC-INTENSITY-H1",
+      "label": "H1 2025 stock-based compensation intensity",
+      "formula": "stock-based compensation ÷ revenue",
+      "unit": "ratio",
+      "correctAsOfValue": 0.1499156952634409,
+      "leakedLaterValue": 0.14995442114858706,
+      "difference": 0.00003872588514616804,
+      "interpretation": "A ratio can change even when each source difference is individually compatible with lower display precision.",
+      "sourceEntryIds": [
+        "sbc-h1-2025",
+        "revenue-h1-2025"
+      ]
+    }
+  ],
+  "sourceLedger": {
+    "id": "crwv-revision-ledger-2026-q2-v1",
+    "pageUrl": "https://ahasignals.com/filing-delta/coreweave/revisions/2026-q2/",
+    "jsonUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+    "payloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+  },
+  "relatedBenchmark": {
+    "id": "ahasignals-pit-backtest-validation-benchmark-v1",
+    "version": "1.0.0",
+    "url": "https://ahasignals.com/research/point-in-time-backtest-validation-benchmark/",
+    "doi": "10.5281/zenodo.22279744",
+    "exercisedCases": [
+      "AS-PIT-001",
+      "AS-PIT-002"
+    ]
+  },
+  "reproducibilityRules": [
+    "Keep each accession-level observation immutable.",
+    "Use SEC acceptance time as the public-availability clock.",
+    "Apply the as-of filter before calculating a feature.",
+    "Keep missing observations missing; do not convert them to zero.",
+    "Treat rounding-compatible, presentation-change and issuer-restatement classes separately."
+  ],
+  "limitations": [
+    "The 14 facts are a reviewed subset with exact identity matches, not a reconstruction of every cell in either Form 10-Q.",
+    "The case study demonstrates source-vintage contamination; it does not measure realized portfolio returns, alpha, information coefficient, Sharpe ratio or drawdown.",
+    "A different comparative value is not automatically an error. The issuer did not label these differences as a restatement.",
+    "The first tradable daily decision time is a documented benchmark convention, not a claim about intraday dissemination latency.",
+    "Company names and ticker symbols identify source filers only. AhaSignals is independent and is not affiliated with or endorsed by the issuer or the SEC.",
+    "Research and education only; not investment, trading, legal, accounting or tax advice."
+  ],
+  "citation": {
+    "text": "AhaSignals. “How Later SEC Comparatives Leak Into Historical Backtests: A CoreWeave Case Study.” Version 1.0.0, published 2026-09-04. https://ahasignals.com/research/how-later-sec-comparatives-leak-into-historical-backtests/",
+    "bibtexKey": "AhaSignals2026CoreWeaveComparativeLeakage"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving published object key and array order, without whitespace.",
+    "payloadSha256": "54b2afb6cd28aa9eb7383c5c2fcf45afa2c60395a9f8086258f1d11a5a4e1f10"
+  }
+}

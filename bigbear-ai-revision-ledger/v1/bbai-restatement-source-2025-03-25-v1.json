@@ -1,0 +1,4526 @@
+{
+  "schemaVersion": "1.0.0",
+  "issuer": {
+    "company": "BigBear.ai Holdings, Inc.",
+    "ticker": "BBAI",
+    "cik": "0001836981"
+  },
+  "scope": {
+    "definition": "Every non-zero issuer-labelled error-correction adjustment carried by the SEC filing's RestatementAxis in Note 2 and Note 25 primary-statement tables.",
+    "includedNotes": [
+      "Note 2 — Restatement of Previously Issued Financial Statements",
+      "Note 25 — Restatement of Quarterly Financial Information (Unaudited)"
+    ],
+    "exclusions": [
+      "Unchanged cells",
+      "Narrative-only disclosures",
+      "Dimensional facts outside the primary-statement restatement tables",
+      "Facts that cannot be uniquely assigned to previously reported, adjustment and restated states"
+    ]
+  },
+  "sourceDocuments": {
+    "companyFacts": {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001836981.json",
+      "snapshotSha256": "e69f0811475624d9b60a6e71a72c220c8c85d2201e294e4fbafe80d3cb6f6124"
+    },
+    "submissions": {
+      "url": "https://data.sec.gov/submissions/CIK0001836981.json",
+      "snapshotSha256": "b45f99cae29b12be19c74767757d44ccacc490f7daad6cc681f76a07825371b6"
+    },
+    "restatedAnnualReport": {
+      "accession": "0001628280-25-014752",
+      "acceptedAt": "2025-03-25T20:49:29.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm",
+      "documentSha256": "62e10a79da4d09974509f5c9e295bc74badf3c9f91ba863331b5606d4b9eb800"
+    },
+    "nonRelianceNotice": {
+      "accession": "0001193125-25-056086",
+      "acceptedAt": "2025-03-18T10:04:50.000Z",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000119312525056086/d925610d8k.htm",
+      "documentSha256": "57300b5963ae1fc4b4f7b935217b5d6e62813bb2611f776d73443662b81f4531"
+    }
+  },
+  "entryCount": 160,
+  "entries": [
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -1591000,
+      "restatementAdjustment": -19796000,
+      "restated": -21387000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-001",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": 2302000,
+      "restatementAdjustment": 9656000,
+      "restated": 11958000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-002",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Deferred income tax (benefit) expense",
+      "taxonomy": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -1757000,
+      "restatementAdjustment": -167000,
+      "restated": -1924000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-003",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -121674000,
+      "restatementAdjustment": 10307000,
+      "restated": -111367000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-004",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -0.95,
+      "restatementAdjustment": 0.08,
+      "restated": -0.87,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-005",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -0.95,
+      "restatementAdjustment": 0.08,
+      "restated": -0.87,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-006",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": 1591000,
+      "restatementAdjustment": 19796000,
+      "restated": 21387000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-007",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -123391000,
+      "restatementAdjustment": 10140000,
+      "restated": -113251000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-008",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Income tax expense (benefit)",
+      "taxonomy": "us-gaap:IncomeTaxExpenseBenefit",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -1717000,
+      "restatementAdjustment": -167000,
+      "restated": -1884000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-009",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": 14436000,
+      "restatementAdjustment": 9656000,
+      "restated": 24092000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-010",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2022-01-01",
+      "periodEnd": "2022-12-31",
+      "previouslyReported": -121674000,
+      "restatementAdjustment": 10307000,
+      "restated": -111367000,
+      "priorSource": {
+        "accession": "0001628280-23-010166",
+        "form": "10-K",
+        "acceptedAt": "2023-03-31T20:18:35.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023010166/bbai-20221231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-011",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 54000,
+      "restatementAdjustment": 613000,
+      "restated": 667000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-012",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 25469000,
+      "restatementAdjustment": 3000000,
+      "restated": 28469000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-013",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 258604000,
+      "restatementAdjustment": -42654000,
+      "restated": 215950000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-014",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 60837000,
+      "restatementAdjustment": 3000000,
+      "restated": 63837000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-015",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 192807000,
+      "restatementAdjustment": -46267000,
+      "restated": 146540000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-016",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -279278000,
+      "restatementAdjustment": 42654000,
+      "restated": -236624000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-017",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders' equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -54039000,
+      "restatementAdjustment": 42654000,
+      "restated": -11385000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-018",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 10567000,
+      "restatementAdjustment": 2445000,
+      "restated": 13012000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-019",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 500000,
+      "restatementAdjustment": 2528000,
+      "restated": 3028000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-020",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -26214000,
+      "restatementAdjustment": -4973000,
+      "restated": -31187000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-021",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -26214000,
+      "restatementAdjustment": -4973000,
+      "restated": -31187000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-022",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -0.19,
+      "restatementAdjustment": -0.04,
+      "restated": -0.23,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-023",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -0.19,
+      "restatementAdjustment": -0.04,
+      "restated": -0.23,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-024",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -10567000,
+      "restatementAdjustment": -2445000,
+      "restated": -13012000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-025",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -26155000,
+      "restatementAdjustment": -4973000,
+      "restated": -31128000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-026",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": 3556000,
+      "restatementAdjustment": 2528000,
+      "restated": 6084000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-027",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31",
+      "previouslyReported": -26214000,
+      "restatementAdjustment": -4973000,
+      "restated": -31187000,
+      "priorSource": {
+        "accession": "0001628280-23-018202",
+        "form": "10-Q",
+        "acceptedAt": "2023-05-15T20:23:42.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023018202/bbai-20230331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-028",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 2000,
+      "restatementAdjustment": 613000,
+      "restated": 615000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-029",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 44126000,
+      "restatementAdjustment": 2309000,
+      "restated": 46435000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-030",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 269793000,
+      "restatementAdjustment": -40719000,
+      "restated": 229074000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-031",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 71781000,
+      "restatementAdjustment": 2309000,
+      "restated": 74090000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-032",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 193296000,
+      "restatementAdjustment": -43641000,
+      "restated": 149655000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-033",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -296173000,
+      "restatementAdjustment": 40719000,
+      "restated": -255454000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-034",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders' equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -61573000,
+      "restatementAdjustment": 40719000,
+      "restated": -20854000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-035",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 13688000,
+      "restatementAdjustment": 1754000,
+      "restated": 15442000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-036",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 1006000,
+      "restatementAdjustment": 5154000,
+      "restated": 6160000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-037",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -43109000,
+      "restatementAdjustment": -6908000,
+      "restated": -50017000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-038",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -43109000,
+      "restatementAdjustment": -6908000,
+      "restated": -50017000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-039",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -0.3,
+      "restatementAdjustment": -0.05,
+      "restated": -0.35,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-040",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -0.3,
+      "restatementAdjustment": -0.05,
+      "restated": -0.35,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-041",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -13688000,
+      "restatementAdjustment": -1754000,
+      "restated": -15442000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-042",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -43053000,
+      "restatementAdjustment": -6908000,
+      "restated": -49961000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-043",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 7116000,
+      "restatementAdjustment": 5154000,
+      "restated": 12270000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-044",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -43109000,
+      "restatementAdjustment": -6908000,
+      "restated": -50017000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-045",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -16895000,
+      "restatementAdjustment": -1935000,
+      "restated": -18830000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-046",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -0.12,
+      "restatementAdjustment": -0.01,
+      "restated": -0.13,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-047",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -0.12,
+      "restatementAdjustment": -0.01,
+      "restated": -0.13,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-048",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -3121000,
+      "restatementAdjustment": 691000,
+      "restated": -2430000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-049",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -16898000,
+      "restatementAdjustment": -1935000,
+      "restated": -18833000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-050",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": 3560000,
+      "restatementAdjustment": 2626000,
+      "restated": 6186000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-051",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30",
+      "previouslyReported": -16895000,
+      "restatementAdjustment": -1935000,
+      "restated": -18830000,
+      "priorSource": {
+        "accession": "0001628280-23-028870",
+        "form": "10-Q",
+        "acceptedAt": "2023-08-10T20:20:21.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023028870/bbai-20230630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-052",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 2000,
+      "restatementAdjustment": 613000,
+      "restated": 615000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-053",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 28467000,
+      "restatementAdjustment": 699000,
+      "restated": 29166000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-054",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 255300000,
+      "restatementAdjustment": -39602000,
+      "restated": 215698000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-055",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 56997000,
+      "restatementAdjustment": 699000,
+      "restated": 57696000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-056",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 193784000,
+      "restatementAdjustment": -40914000,
+      "restated": 152870000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-057",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -292174000,
+      "restatementAdjustment": 39602000,
+      "restated": -252572000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-058",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders' equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -52289000,
+      "restatementAdjustment": 39602000,
+      "restated": -12687000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-059",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -1971000,
+      "restatementAdjustment": 144000,
+      "restated": -1827000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-060",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 1512000,
+      "restatementAdjustment": 7881000,
+      "restated": 9393000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-061",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -39110000,
+      "restatementAdjustment": -8025000,
+      "restated": -47135000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-062",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -39110000,
+      "restatementAdjustment": -8025000,
+      "restated": -47135000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-063",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -0.27,
+      "restatementAdjustment": -0.05,
+      "restated": -0.32,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-064",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -0.27,
+      "restatementAdjustment": -0.05,
+      "restated": -0.32,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-065",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 1971000,
+      "restatementAdjustment": -144000,
+      "restated": 1827000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-066",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -39059000,
+      "restatementAdjustment": -8025000,
+      "restated": -47084000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-067",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 10656000,
+      "restatementAdjustment": 7881000,
+      "restated": 18537000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-068",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": -39110000,
+      "restatementAdjustment": -8025000,
+      "restated": -47135000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-069",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 3999000,
+      "restatementAdjustment": -1117000,
+      "restated": 2882000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-070",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 0.03,
+      "restatementAdjustment": -0.01,
+      "restated": 0.02,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-071",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 0.03,
+      "restatementAdjustment": -0.01,
+      "restated": 0.02,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-072",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 15659000,
+      "restatementAdjustment": 1610000,
+      "restated": 17269000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-073",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 3994000,
+      "restatementAdjustment": -1117000,
+      "restated": 2877000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-074",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 3540000,
+      "restatementAdjustment": 2727000,
+      "restated": 6267000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-075",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30",
+      "previouslyReported": 3999000,
+      "restatementAdjustment": -1117000,
+      "restated": 2882000,
+      "priorSource": {
+        "accession": "0001628280-23-038308",
+        "form": "10-Q",
+        "acceptedAt": "2023-11-09T21:53:36.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828023038308/bbai-20230930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-076",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 37000,
+      "restatementAdjustment": 291000,
+      "restated": 328000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-077",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 37862000,
+      "restatementAdjustment": 491000,
+      "restated": 38353000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-078",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 267245000,
+      "restatementAdjustment": -37336000,
+      "restated": 229909000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-079",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 68622000,
+      "restatementAdjustment": 491000,
+      "restated": 69113000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-080",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt, net",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 194273000,
+      "restatementAdjustment": -38118000,
+      "restated": 156155000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-081",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -313430000,
+      "restatementAdjustment": 37336000,
+      "restated": -276094000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-082",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders’ equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -67335000,
+      "restatementAdjustment": 37336000,
+      "restated": -29999000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-083",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 7424000,
+      "restatementAdjustment": -63000,
+      "restated": 7361000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-084",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 2018000,
+      "restatementAdjustment": 10677000,
+      "restated": 12695000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-085",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Deferred income tax (benefit) expense",
+      "taxonomy": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 88000,
+      "restatementAdjustment": -323000,
+      "restated": -235000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-086",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -60366000,
+      "restatementAdjustment": -10291000,
+      "restated": -70657000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-087",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -0.4,
+      "restatementAdjustment": -0.07,
+      "restated": -0.47,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-088",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -0.4,
+      "restatementAdjustment": -0.07,
+      "restated": -0.47,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-089",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -7424000,
+      "restatementAdjustment": 63000,
+      "restated": -7361000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-090",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -60265000,
+      "restatementAdjustment": -10614000,
+      "restated": -70879000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-091",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Income tax expense (benefit)",
+      "taxonomy": "us-gaap:IncomeTaxExpenseBenefit",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 101000,
+      "restatementAdjustment": -323000,
+      "restated": -222000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-092",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 14200000,
+      "restatementAdjustment": 10677000,
+      "restated": 24877000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-093",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -60366000,
+      "restatementAdjustment": -10291000,
+      "restated": -70657000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-094",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -21256000,
+      "restatementAdjustment": -2266000,
+      "restated": -23522000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-095",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -0.14,
+      "restatementAdjustment": -0.01,
+      "restated": -0.15,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-096",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -0.14,
+      "restatementAdjustment": -0.01,
+      "restated": -0.15,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-097",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -9395000,
+      "restatementAdjustment": 207000,
+      "restated": -9188000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-098",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -21206000,
+      "restatementAdjustment": -2589000,
+      "restated": -23795000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-099",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Income tax expense (benefit)",
+      "taxonomy": "us-gaap:IncomeTaxExpenseBenefit",
+      "unit": "USD",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 50000,
+      "restatementAdjustment": -323000,
+      "restated": -273000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-100",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": 3544000,
+      "restatementAdjustment": 2796000,
+      "restated": 6340000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-101",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31",
+      "previouslyReported": -21256000,
+      "restatementAdjustment": -2266000,
+      "restated": -23522000,
+      "priorSource": {
+        "accession": "0001628280-24-011538",
+        "form": "10-K",
+        "acceptedAt": "2024-03-15T21:23:23.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024011538/bbai-20231231.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-102",
+      "companyFactsVerification": {
+        "priorValue": "issuer-derived-q4-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 14000,
+      "restatementAdjustment": 291000,
+      "restated": 305000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-103",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 24956000,
+      "restatementAdjustment": 306000,
+      "restated": 25262000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-104",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 269145000,
+      "restatementAdjustment": -34691000,
+      "restated": 234454000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-105",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 63070000,
+      "restatementAdjustment": 306000,
+      "restated": 63376000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-106",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 194761000,
+      "restatementAdjustment": -35288000,
+      "restated": 159473000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-107",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -438577000,
+      "restatementAdjustment": 34691000,
+      "restated": -403886000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-108",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders' equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 108482000,
+      "restatementAdjustment": 34691000,
+      "restated": 143173000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-109",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 23992000,
+      "restatementAdjustment": -185000,
+      "restated": 23807000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-110",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 506000,
+      "restatementAdjustment": 2830000,
+      "restated": 3336000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-111",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -125147000,
+      "restatementAdjustment": -2645000,
+      "restated": -127792000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-112",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -125147000,
+      "restatementAdjustment": -2645000,
+      "restated": -127792000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-113",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -0.67,
+      "restatementAdjustment": -0.01,
+      "restated": -0.68,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-114",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -0.67,
+      "restatementAdjustment": -0.01,
+      "restated": -0.68,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-115",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -23992000,
+      "restatementAdjustment": 185000,
+      "restated": -23807000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-116",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -125161000,
+      "restatementAdjustment": -2645000,
+      "restated": -127806000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-117",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": 3555000,
+      "restatementAdjustment": 2830000,
+      "restated": 6385000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-118",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31",
+      "previouslyReported": -125147000,
+      "restatementAdjustment": -2645000,
+      "restated": -127792000,
+      "priorSource": {
+        "accession": "0001628280-24-022622",
+        "form": "10-Q",
+        "acceptedAt": "2024-05-10T20:10:10.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024022622/bbai-20240331.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-119",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 0,
+      "restatementAdjustment": 291000,
+      "restated": 291000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-120",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 17074000,
+      "restatementAdjustment": 107000,
+      "restated": 17181000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-121",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 258127000,
+      "restatementAdjustment": -31989000,
+      "restated": 226138000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-122",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 53315000,
+      "restatementAdjustment": 107000,
+      "restated": 53422000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-123",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 195250000,
+      "restatementAdjustment": -32387000,
+      "restated": 162863000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-124",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -450314000,
+      "restatementAdjustment": 31989000,
+      "restated": -418325000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-125",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders' equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 102756000,
+      "restatementAdjustment": 31989000,
+      "restated": 134745000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-126",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 16110000,
+      "restatementAdjustment": -384000,
+      "restated": 15726000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-127",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 1012000,
+      "restatementAdjustment": 5731000,
+      "restated": 6743000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-128",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -136884000,
+      "restatementAdjustment": -5347000,
+      "restated": -142231000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-129",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -136884000,
+      "restatementAdjustment": -5347000,
+      "restated": -142231000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-130",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -0.63,
+      "restatementAdjustment": -0.03,
+      "restated": -0.66,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-131",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -0.63,
+      "restatementAdjustment": -0.03,
+      "restated": -0.66,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-132",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -16110000,
+      "restatementAdjustment": 384000,
+      "restated": -15726000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-133",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -136883000,
+      "restatementAdjustment": -5347000,
+      "restated": -142230000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-134",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 7106000,
+      "restatementAdjustment": 5731000,
+      "restated": 12837000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-135",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -136884000,
+      "restatementAdjustment": -5347000,
+      "restated": -142231000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-136",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -11737000,
+      "restatementAdjustment": -2702000,
+      "restated": -14439000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-137",
+      "companyFactsVerification": {
+        "priorValue": "prior-accession-cell-not-returned",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -0.05,
+      "restatementAdjustment": -0.01,
+      "restated": -0.06,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-138",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -0.05,
+      "restatementAdjustment": -0.01,
+      "restated": -0.06,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-139",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 7882000,
+      "restatementAdjustment": 199000,
+      "restated": 8081000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-140",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -11722000,
+      "restatementAdjustment": -2702000,
+      "restated": -14424000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-141",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": 3551000,
+      "restatementAdjustment": 2901000,
+      "restated": 6452000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-142",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30",
+      "previouslyReported": -11737000,
+      "restatementAdjustment": -2702000,
+      "restated": -14439000,
+      "priorSource": {
+        "accession": "0001628280-24-036497",
+        "form": "10-Q",
+        "acceptedAt": "2024-08-09T20:31:26.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024036497/bbai-20240630.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-143",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Deferred tax liabilities",
+      "taxonomy": "us-gaap:DeferredIncomeTaxLiabilitiesNet",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 0,
+      "restatementAdjustment": 291000,
+      "restated": 291000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-144",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Derivative liabilities",
+      "taxonomy": "us-gaap:DerivativeLiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 15796000,
+      "restatementAdjustment": 55000,
+      "restated": 15851000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-145",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total liabilities",
+      "taxonomy": "us-gaap:Liabilities",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 255650000,
+      "restatementAdjustment": -29030000,
+      "restated": 226620000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-146",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total current liabilities",
+      "taxonomy": "us-gaap:LiabilitiesCurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 50585000,
+      "restatementAdjustment": 55000,
+      "restated": 50640000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-147",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Long-term debt",
+      "taxonomy": "us-gaap:LongTermDebtNoncurrent",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 195738000,
+      "restatementAdjustment": -29376000,
+      "restated": 166362000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-148",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Accumulated deficit",
+      "taxonomy": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -462490000,
+      "restatementAdjustment": 29030000,
+      "restated": -433460000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-149",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "balance-sheet",
+      "label": "Total stockholders' equity (deficit)",
+      "taxonomy": "us-gaap:StockholdersEquity",
+      "unit": "USD",
+      "periodStart": null,
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 98433000,
+      "restatementAdjustment": 29030000,
+      "restated": 127463000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-150",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "bbai:FairValueAdjustmentsOfWarrantsAndDerivatives",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 14832000,
+      "restatementAdjustment": -436000,
+      "restated": 14396000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-151",
+      "companyFactsVerification": {
+        "priorValue": "custom-taxonomy-not-returned",
+        "restatedValue": "custom-taxonomy-not-returned"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Amortization of debt issuance costs and discount",
+      "taxonomy": "us-gaap:AmortizationOfFinancingCosts",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 1517000,
+      "restatementAdjustment": 8742000,
+      "restated": 10259000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-152",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-cash-flows",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -149060000,
+      "restatementAdjustment": -8306000,
+      "restated": -157366000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-153",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Total comprehensive loss",
+      "taxonomy": "us-gaap:ComprehensiveIncomeNetOfTax",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -149068000,
+      "restatementAdjustment": -8306000,
+      "restated": -157374000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-154",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareBasic",
+      "unit": "USD/share",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -0.65,
+      "restatementAdjustment": -0.04,
+      "restated": -0.69,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-155",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Basic and diluted net loss per share",
+      "taxonomy": "us-gaap:EarningsPerShareDiluted",
+      "unit": "USD/share",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -0.65,
+      "restatementAdjustment": -0.04,
+      "restated": -0.69,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-156",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net increase (decrease) in fair value of derivatives",
+      "taxonomy": "us-gaap:GainLossOnDerivativeInstrumentsNetPretax",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -14832000,
+      "restatementAdjustment": 436000,
+      "restated": -14396000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-157",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Loss before taxes",
+      "taxonomy": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -149038000,
+      "restatementAdjustment": -8306000,
+      "restated": -157344000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-158",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Interest expense",
+      "taxonomy": "us-gaap:InterestExpenseDebt",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": 10647000,
+      "restatementAdjustment": 8742000,
+      "restated": 19389000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-159",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    },
+    {
+      "statement": "statement-of-operations",
+      "label": "Net loss",
+      "taxonomy": "us-gaap:NetIncomeLoss",
+      "unit": "USD",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-09-30",
+      "previouslyReported": -149060000,
+      "restatementAdjustment": -8306000,
+      "restated": -157366000,
+      "priorSource": {
+        "accession": "0001628280-24-046327",
+        "form": "10-Q",
+        "acceptedAt": "2024-11-07T21:28:46.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828024046327/bbai-20240930.htm"
+      },
+      "restatedSource": {
+        "accession": "0001628280-25-014752",
+        "form": "10-K",
+        "acceptedAt": "2025-03-25T20:49:29.000Z",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1836981/000162828025014752/bbai-20241231.htm"
+      },
+      "sourceCellId": "BBAI-RS-160",
+      "companyFactsVerification": {
+        "priorValue": "matched",
+        "restatedValue": "matched"
+      }
+    }
+  ]
+}

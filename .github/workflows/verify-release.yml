@@ -18,3 +18,7 @@ jobs:
         run: ./scripts/verify-release.sh
       - name: Verify filing revision event corpus v1
         run: ./revision-event-corpus/v1/verify-corpus.sh
+      - name: Verify BigBear.ai accession-level PIT Revision Ledger v1
+        run: ./bigbear-ai-revision-ledger/v1/verify-ledger.sh
+      - name: Verify CoreWeave later-comparatives case study v1
+        run: ./case-studies/coreweave-later-comparatives-v1/verify-case-study.sh

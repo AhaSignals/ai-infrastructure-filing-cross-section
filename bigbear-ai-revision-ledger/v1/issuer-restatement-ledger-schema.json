@@ -1,0 +1,218 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahasignals.com/data/filing-delta/issuer-restatement-ledger-schema.json",
+  "title": "AhaSignals Accession-Level Issuer Restatement Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "schemaUrl",
+    "artifact",
+    "subject",
+    "researchQuestion",
+    "completenessBoundary",
+    "sourceChain",
+    "summary",
+    "knowledgeStates",
+    "entries",
+    "limitations",
+    "citation",
+    "integrity"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "schemaUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "version",
+        "pageUrl",
+        "jsonUrl",
+        "csvUrl",
+        "publishedAt",
+        "knowledgeCutoff",
+        "status",
+        "license",
+        "creator"
+      ]
+    },
+    "subject": {
+      "type": "object",
+      "required": [
+        "company",
+        "ticker",
+        "cik"
+      ]
+    },
+    "researchQuestion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "completenessBoundary": {
+      "type": "object",
+      "required": [
+        "definition",
+        "includedNotes",
+        "exclusions"
+      ]
+    },
+    "sourceChain": {
+      "type": "object",
+      "required": [
+        "nonRelianceNotice",
+        "restatedAnnualReport",
+        "companyFacts",
+        "submissions"
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "entryCount",
+        "periodEndCount",
+        "statementCount",
+        "priorCompanyFactsMatchCount",
+        "restatedCompanyFactsMatchCount",
+        "signChangeCount",
+        "arithmeticReconciledCount"
+      ]
+    },
+    "knowledgeStates": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 160,
+      "maxItems": 160,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "sequence",
+          "entryId",
+          "identity",
+          "priorState",
+          "nonRelianceState",
+          "restatedState",
+          "change",
+          "verification",
+          "pointInTimePolicy"
+        ],
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "entryId": {
+            "type": "string",
+            "pattern": "^BBAI-RS-[0-9]{3}$"
+          },
+          "identity": {
+            "type": "object",
+            "required": [
+              "statement",
+              "label",
+              "taxonomy",
+              "unit",
+              "periodStart",
+              "periodEnd"
+            ]
+          },
+          "priorState": {
+            "type": "object",
+            "required": [
+              "value",
+              "acceptedAt",
+              "accession",
+              "form",
+              "filingUrl",
+              "sourceRole"
+            ]
+          },
+          "nonRelianceState": {
+            "type": "object",
+            "required": [
+              "valueStatus",
+              "acceptedAt",
+              "accession",
+              "form",
+              "filingUrl",
+              "documentSha256",
+              "sourceRole"
+            ]
+          },
+          "restatedState": {
+            "type": "object",
+            "required": [
+              "value",
+              "acceptedAt",
+              "accession",
+              "form",
+              "filingUrl",
+              "sourceRole"
+            ]
+          },
+          "change": {
+            "type": "object",
+            "required": [
+              "issuerReportedAdjustment",
+              "calculatedDelta",
+              "absoluteDelta",
+              "arithmeticReconciled",
+              "signChanged",
+              "classification",
+              "authority"
+            ]
+          },
+          "verification": {
+            "type": "object",
+            "required": [
+              "restatementTableCell",
+              "companyFactsPriorValue",
+              "companyFactsRestatedValue"
+            ]
+          },
+          "pointInTimePolicy": {
+            "type": "object",
+            "required": [
+              "beforeNonReliance",
+              "afterNonRelianceBeforeRestatement",
+              "afterRestatement"
+            ]
+          }
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "text",
+        "bibtexKey"
+      ]
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "canonicalization",
+        "payloadSha256"
+      ]
+    }
+  }
+}

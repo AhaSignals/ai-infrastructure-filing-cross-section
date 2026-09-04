@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
       - name: Verify all eight frozen release files
         run: ./scripts/verify-release.sh
       - name: Verify filing revision event corpus v1

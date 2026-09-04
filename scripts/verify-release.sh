@@ -5,6 +5,8 @@ set -eu
 repository_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 cd "$repository_root"
 
+node scripts/check-public-identity.mjs
+
 if command -v sha256sum >/dev/null 2>&1; then
   sha256sum --check RELEASE-MANIFEST.sha256
 elif command -v shasum >/dev/null 2>&1; then

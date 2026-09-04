@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahasignals.com/data/filing-delta/accession-comparative-ledger-schema.json",
+  "title": "AhaSignals Accession-Level Point-in-Time Comparative Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "schemaUrl",
+    "artifact",
+    "subject",
+    "researchQuestion",
+    "completenessBoundary",
+    "sourceChain",
+    "summary",
+    "entries",
+    "limitations",
+    "citation",
+    "integrity"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "schemaUrl": {
+      "const": "https://ahasignals.com/data/filing-delta/accession-comparative-ledger-schema.json"
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "version",
+        "status",
+        "publishedAt",
+        "knowledgeCutoff",
+        "creator",
+        "license",
+        "pageUrl",
+        "dataRoot"
+      ]
+    },
+    "subject": {
+      "type": "object",
+      "required": [
+        "company",
+        "ticker",
+        "cik",
+        "filerRegime"
+      ]
+    },
+    "researchQuestion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "completenessBoundary": {
+      "type": "object",
+      "required": [
+        "definition",
+        "exclusions"
+      ]
+    },
+    "sourceChain": {
+      "type": "object",
+      "minProperties": 2
+    },
+    "summary": {
+      "type": "object",
+      "minProperties": 4
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sequence",
+          "entryId",
+          "statement",
+          "label",
+          "taxonomy",
+          "unit",
+          "periodStart",
+          "periodEnd",
+          "priorState",
+          "laterState",
+          "change",
+          "pointInTimePolicy"
+        ],
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "entryId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "taxonomy": {
+            "type": "string"
+          },
+          "unit": {
+            "const": "USD"
+          },
+          "periodStart": {
+            "type": "string",
+            "format": "date"
+          },
+          "periodEnd": {
+            "type": "string",
+            "format": "date"
+          },
+          "priorState": {
+            "type": "object",
+            "required": [
+              "value",
+              "form",
+              "accession",
+              "acceptedAt",
+              "filingUrl",
+              "documentSha256",
+              "sourceRole"
+            ]
+          },
+          "laterState": {
+            "type": "object",
+            "required": [
+              "value",
+              "form",
+              "accession",
+              "acceptedAt",
+              "filingUrl",
+              "documentSha256",
+              "sourceRole"
+            ]
+          },
+          "change": {
+            "type": "object",
+            "required": [
+              "delta",
+              "absoluteDelta",
+              "signChanged"
+            ]
+          },
+          "pointInTimePolicy": {
+            "type": "object",
+            "required": [
+              "beforeLaterFiling",
+              "afterLaterFiling",
+              "noSilentOverwrite"
+            ]
+          }
+        }
+      }
+    },
+    "issuerDisclosure": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "text",
+        "bibtexKey"
+      ]
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "canonicalization",
+        "payloadSha256"
+      ]
+    }
+  }
+}

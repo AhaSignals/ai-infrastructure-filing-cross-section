@@ -13,7 +13,7 @@ const identityField = new RegExp(
   'i',
 );
 
-const trackedFiles = execFileSync('git', ['ls-files', '-z'])
+const trackedFiles = execFileSync('git', ['ls-files', '--cached', '--others', '--exclude-standard', '-z'])
   .toString('utf8')
   .split('\0')
   .filter(Boolean);
@@ -35,4 +35,4 @@ if (violations.length > 0) {
   process.exit(1);
 }
 
-console.log(`Public identity check passed for ${trackedFiles.length} tracked files.`);
+console.log(`Public identity check passed for ${trackedFiles.length} tracked and untracked public files.`);

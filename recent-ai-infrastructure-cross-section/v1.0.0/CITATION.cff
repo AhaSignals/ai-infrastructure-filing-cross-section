@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this release, cite the Zenodo record below."
+title: "Recent AI Infrastructure Filing Cross-Section: 2026 Q2"
+type: dataset
+version: 1.0.0
+date-released: 2026-09-05
+authors:
+  - name: AhaSignals
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22313302"
+    description: "Version 1.0.0 archival DOI"
+repository-code: "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section"
+url: "https://ahasignals.com/research/recent-ai-infrastructure-filing-cross-section/"
+license: CC-BY-4.0
+keywords:
+  - point-in-time financial data
+  - SEC filings
+  - financial data revisions
+  - look-ahead bias
+  - cross-sectional analysis
+  - AI infrastructure
+  - reproducible finance research
+abstract: >-
+  A frozen 18-cell Q2 2026 filing cross-section for CoreWeave, Nebius and Astera
+  Labs, accompanied by three accession-level source ledgers, cell-level
+  comparability tiers, SEC acceptance clocks, schemas and deterministic checks.

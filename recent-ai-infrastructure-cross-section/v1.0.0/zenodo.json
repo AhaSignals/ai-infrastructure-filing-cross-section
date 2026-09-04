@@ -1,0 +1,50 @@
+{
+  "title": "Recent AI Infrastructure Filing Cross-Section: 2026 Q2",
+  "upload_type": "dataset",
+  "publication_date": "2026-09-05",
+  "description": "A frozen 18-cell Q2 2026 filing cross-section for CoreWeave, Nebius and Astera Labs, accompanied by three accession-level source ledgers, cell-level comparability tiers, SEC acceptance clocks, schemas and deterministic checks. The release is a descriptive filing comparison, not a valuation, return or investment claim.",
+  "creators": [
+    {
+      "name": "AhaSignals"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.22313302",
+  "keywords": [
+    "point-in-time financial data",
+    "SEC filings",
+    "financial data revisions",
+    "look-ahead bias",
+    "cross-sectional analysis",
+    "AI infrastructure",
+    "reproducible finance research"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://ahasignals.com/research/recent-ai-infrastructure-filing-cross-section/",
+      "relation": "isDocumentedBy",
+      "scheme": "url",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://github.com/AhaSignals/ai-infrastructure-filing-cross-section/releases/tag/recent-ai-infrastructure-cross-section-v1.0.0",
+      "relation": "isSupplementedBy",
+      "scheme": "url",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.22239714",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.5281/zenodo.22288550",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-technicalnote"
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaUrl": "https://ahasignals.com/data/filing-delta/recent-ai-infrastructure-cross-section/schema.json",
+  "artifact": {
+    "id": "recent-ai-infrastructure-filing-cross-section-2026-q2-v1",
+    "title": "Recent AI Infrastructure Filing Cross-Section — CoreWeave, Nebius and Astera Labs",
+    "version": "1.0.0",
+    "status": "frozen",
+    "publishedAt": "2026-09-05",
+    "knowledgeCutoff": "2026-09-04T00:00:00.000Z",
+    "creator": "AhaSignals",
+    "license": "CC BY 4.0",
+    "pageUrl": "https://ahasignals.com/research/recent-ai-infrastructure-filing-cross-section/",
+    "jsonUrl": "https://ahasignals.com/data/filing-delta/recent-ai-infrastructure-cross-section/recent-ai-infrastructure-filing-cross-section-2026-q2-v1.json",
+    "csvUrl": "https://ahasignals.com/data/filing-delta/recent-ai-infrastructure-cross-section/recent-ai-infrastructure-filing-cross-section-2026-q2-v1.csv"
+  },
+  "researchQuestion": "What can one frozen filing contract reveal across a recent AI cloud operator, a foreign-private-issuer AI cloud operator and an AI connectivity supplier?",
+  "contract": {
+    "decisionRule": "A source is eligible only when its SEC acceptance timestamp is on or before the knowledge cutoff.",
+    "periodRule": "Use the quarter and cumulative six-month period ended June 30, 2026 with the issuer-presented prior-year comparison.",
+    "missingDataRule": "Preserve missing or ineligible cells; do not impute or substitute non-GAAP values.",
+    "rankingRule": "No composite rank is published. Tier C cells are not eligible for direct cross-issuer ranking.",
+    "tierDefinitions": {
+      "A": "Direct domestic-filer 10-Q fact with matched period identity.",
+      "B": "Direct SEC-filed foreign-issuer exhibit value or a broader-but-disclosed numerator.",
+      "C": "Observed value with a material comparability limitation; do not rank."
+    }
+  },
+  "metricDefinitions": [
+    {
+      "id": "revenueGrowth",
+      "label": "Quarterly revenue growth"
+    },
+    {
+      "id": "operatingMargin",
+      "label": "Quarterly operating margin"
+    },
+    {
+      "id": "operatingCashFlowMarginYtd",
+      "label": "Operating cash flow / revenue, year to date"
+    },
+    {
+      "id": "capexIntensityYtd",
+      "label": "Capital spending / revenue, year to date"
+    },
+    {
+      "id": "sbcIntensityYtd",
+      "label": "Stock-based compensation / revenue, year to date"
+    },
+    {
+      "id": "dilutedShareChange",
+      "label": "Diluted weighted-average share change"
+    }
+  ],
+  "rows": [
+    {
+      "issuerId": "coreweave",
+      "company": "CoreWeave, Inc.",
+      "ticker": "CRWV",
+      "cik": "0001769628",
+      "role": "AI cloud infrastructure",
+      "filerRegime": "domestic-issuer",
+      "fiscalPeriod": "FY2026 Q2",
+      "periodEnd": "2026-06-30",
+      "source": {
+        "accession": "0001769628-26-000366",
+        "acceptedAt": "2026-08-11T23:24:42.000Z",
+        "form": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+      },
+      "metrics": {
+        "revenueGrowth": {
+          "value": 1.1245874587458746,
+          "priorValue": null,
+          "comparabilityTier": "A",
+          "formula": "(current-quarter revenue / prior-year quarter revenue) - 1",
+          "inputs": {
+            "currentQuarterRevenue": 2575000000,
+            "priorYearQuarterRevenue": 1212000000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "operatingMargin": {
+          "value": -0.019029126213592235,
+          "priorValue": 0.015676567656765675,
+          "comparabilityTier": "A",
+          "formula": "quarterly operating income (loss) / quarterly revenue",
+          "inputs": {
+            "operatingIncomeLoss": -49000000,
+            "revenue": 2575000000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "operatingCashFlowMarginYtd": {
+          "value": 0.7872340425531915,
+          "priorValue": -0.08659981768459435,
+          "comparabilityTier": "A",
+          "formula": "year-to-date operating cash flow / year-to-date revenue",
+          "inputs": {
+            "operatingCashFlow": 3663000000,
+            "revenue": 4653000000
+          },
+          "note": "Cash flow is six-month cumulative."
+        },
+        "capexIntensityYtd": {
+          "value": 3.0339565871480767,
+          "priorValue": 1.7593436645396536,
+          "comparabilityTier": "A",
+          "formula": "year-to-date purchases of property and equipment / year-to-date revenue",
+          "inputs": {
+            "capitalExpenditure": 14117000000,
+            "revenue": 4653000000
+          },
+          "note": "Purchases of property and equipment; not total committed capacity."
+        },
+        "sbcIntensityYtd": {
+          "value": 0.06834300451321727,
+          "priorValue": 0.14995442114858706,
+          "comparabilityTier": "A",
+          "formula": "year-to-date stock-based compensation / year-to-date revenue",
+          "inputs": {
+            "stockBasedCompensation": 318000000,
+            "revenue": 4653000000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "dilutedShareChange": {
+          "value": 0.1314168377823408,
+          "priorValue": null,
+          "comparabilityTier": "A",
+          "formula": "(current-quarter diluted weighted-average shares / prior-year quarter shares) - 1",
+          "inputs": {
+            "currentDilutedShares": 551000000,
+            "priorYearDilutedShares": 487000000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        }
+      }
+    },
+    {
+      "issuerId": "nebius",
+      "company": "Nebius Group N.V.",
+      "ticker": "NBIS",
+      "cik": "0001513845",
+      "role": "AI cloud infrastructure and adjacent businesses",
+      "filerRegime": "foreign-private-issuer",
+      "fiscalPeriod": "2026 Q2",
+      "periodEnd": "2026-06-30",
+      "source": {
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "form": "6-K Exhibit 99.2",
+        "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+      },
+      "metrics": {
+        "revenueGrowth": {
+          "value": 4.540437678401522,
+          "priorValue": null,
+          "comparabilityTier": "B",
+          "formula": "(current-quarter revenue / prior-year quarter revenue) - 1",
+          "inputs": {
+            "currentQuarterRevenue": 582300000,
+            "priorYearQuarterRevenue": 105100000
+          },
+          "note": "SEC-filed 6-K exhibit; values presented in USD millions."
+        },
+        "operatingMargin": {
+          "value": -0.30207796668383996,
+          "priorValue": -1.0580399619410086,
+          "comparabilityTier": "B",
+          "formula": "quarterly loss from operations / quarterly revenue",
+          "inputs": {
+            "operatingLoss": -175900000,
+            "revenue": 582300000
+          },
+          "note": "Issuer table separately presents depreciation and amortization."
+        },
+        "operatingCashFlowMarginYtd": {
+          "value": 4.589931723224295,
+          "priorValue": -2.366025641025641,
+          "comparabilityTier": "B",
+          "formula": "year-to-date operating cash flow / year-to-date revenue",
+          "inputs": {
+            "operatingCashFlow": 4504100000,
+            "revenue": 981300000
+          },
+          "note": "The filing shows a USD 4.395 billion deferred-revenue inflow; this ratio is descriptive and not normalized cash conversion."
+        },
+        "capexIntensityYtd": {
+          "value": 8.285233873433201,
+          "priorValue": 6.759615384615385,
+          "comparabilityTier": "B",
+          "formula": "year-to-date purchases of property, equipment and intangible assets / year-to-date revenue",
+          "inputs": {
+            "productiveAssetPurchases": 8130300000,
+            "revenue": 981300000
+          },
+          "note": "Numerator includes property, equipment and intangible assets and differs from the two domestic issuers’ capex labels."
+        },
+        "sbcIntensityYtd": {
+          "value": 0.14042596555589523,
+          "priorValue": 0.20576923076923076,
+          "comparabilityTier": "B",
+          "formula": "year-to-date share-based compensation / year-to-date revenue",
+          "inputs": {
+            "shareBasedCompensation": 137800000,
+            "revenue": 981300000
+          },
+          "note": "SEC-filed 6-K exhibit; values presented in USD millions."
+        },
+        "dilutedShareChange": {
+          "value": 0.13392693070007344,
+          "priorValue": null,
+          "comparabilityTier": "C",
+          "formula": "(current-quarter diluted weighted-average shares / prior-year quarter diluted shares) - 1",
+          "inputs": {
+            "currentDilutedShares": 280381615,
+            "priorYearDilutedShares": 247266034
+          },
+          "note": "Current-period loss makes potentially dilutive shares anti-dilutive, while the prior-year period was profitable. Retained as an observation but ineligible for direct ranking."
+        }
+      }
+    },
+    {
+      "issuerId": "astera-labs",
+      "company": "Astera Labs, Inc.",
+      "ticker": "ALAB",
+      "cik": "0001736297",
+      "role": "AI connectivity silicon",
+      "filerRegime": "domestic-issuer",
+      "fiscalPeriod": "FY2026 Q2",
+      "periodEnd": "2026-06-30",
+      "source": {
+        "accession": "0001736297-26-000035",
+        "acceptedAt": "2026-08-04T21:34:14.000Z",
+        "form": "10-Q",
+        "url": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm"
+      },
+      "metrics": {
+        "revenueGrowth": {
+          "value": 1.044548651817116,
+          "priorValue": null,
+          "comparabilityTier": "A",
+          "formula": "(current-quarter revenue / prior-year quarter revenue) - 1",
+          "inputs": {
+            "currentQuarterRevenue": 392400000,
+            "priorYearQuarterRevenue": 191925000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "operatingMargin": {
+          "value": 0.2274413863404689,
+          "priorValue": 0.20723720203204377,
+          "comparabilityTier": "A",
+          "formula": "quarterly operating income / quarterly revenue",
+          "inputs": {
+            "operatingIncome": 89248000,
+            "revenue": 392400000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "operatingCashFlowMarginYtd": {
+          "value": 0.2315711062687564,
+          "priorValue": 0.41514997139742776,
+          "comparabilityTier": "A",
+          "formula": "year-to-date operating cash flow / year-to-date revenue",
+          "inputs": {
+            "operatingCashFlow": 162276000,
+            "revenue": 700761000
+          },
+          "note": "Cash flow is six-month cumulative."
+        },
+        "capexIntensityYtd": {
+          "value": 0.04003362059247018,
+          "priorValue": 0.018675629754644006,
+          "comparabilityTier": "A",
+          "formula": "year-to-date purchases of property and equipment / year-to-date revenue",
+          "inputs": {
+            "capitalExpenditure": 28054000,
+            "revenue": 700761000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "sbcIntensityYtd": {
+          "value": 0.16111769918702668,
+          "priorValue": 0.22176243073481575,
+          "comparabilityTier": "A",
+          "formula": "year-to-date stock-based compensation / year-to-date revenue",
+          "inputs": {
+            "stockBasedCompensation": 112905000,
+            "revenue": 700761000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        },
+        "dilutedShareChange": {
+          "value": 0.02942167321729361,
+          "priorValue": null,
+          "comparabilityTier": "A",
+          "formula": "(current-quarter diluted weighted-average shares / prior-year quarter shares) - 1",
+          "inputs": {
+            "currentDilutedShares": 183340000,
+            "priorYearDilutedShares": 178100000
+          },
+          "note": "Direct 10-Q XBRL facts."
+        }
+      }
+    }
+  ],
+  "findings": [
+    "Nebius reported the fastest revenue expansion and the highest capital-spending intensity, but its cash-flow ratio is dominated by a disclosed deferred-revenue inflow and should not be read as normalized cash conversion.",
+    "CoreWeave and Nebius are closer operating-role comparators than Astera Labs; Astera is retained as a supply-chain contrast, not a business-model peer.",
+    "Astera Labs reported the strongest operating margin and lowest capital intensity in this three-issuer snapshot, consistent with a silicon supplier rather than an AI cloud capacity owner.",
+    "The Nebius diluted-share cell is Tier C because the current loss period and prior profitable period apply different dilution mechanics. It remains visible but is excluded from ranking."
+  ],
+  "limitations": [
+    "This is a three-issuer descriptive filing cross-section, not a representative market sample or statistical factor test.",
+    "Issuer roles, accounting presentation and filing regimes differ. Tier labels identify those differences rather than remove them.",
+    "Company-wide results do not isolate pure AI economics, and Nebius includes adjacent businesses.",
+    "The dataset contains no market prices, valuation multiples, portfolio returns, transaction costs or execution assumptions.",
+    "Research and education only; not investment, trading, legal, accounting or tax advice."
+  ],
+  "citation": {
+    "text": "AhaSignals (2026). Recent AI Infrastructure Filing Cross-Section — CoreWeave, Nebius and Astera Labs (Version 1.0.0).",
+    "bibtexKey": "AhaSignals2026RecentAiInfrastructureCrossSection"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving object key and array order, without whitespace.",
+    "payloadSha256": "1bc5c856cb14a7d7f0c35aa69309a4ab79c320bceca0ad1ab448f3d306bf896c"
+  }
+}

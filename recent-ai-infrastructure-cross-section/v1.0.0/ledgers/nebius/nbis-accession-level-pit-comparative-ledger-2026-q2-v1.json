@@ -1,0 +1,1715 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaUrl": "https://ahasignals.com/data/filing-delta/accession-comparative-ledger-schema.json",
+  "artifact": {
+    "id": "nbis-accession-level-pit-comparative-ledger-2026-q2-v1",
+    "title": "Nebius Accession-Level Point-in-Time Comparative Ledger — Q2 2026 Review",
+    "version": "1.0.0",
+    "status": "frozen",
+    "publishedAt": "2026-09-05",
+    "knowledgeCutoff": "2026-08-12T20:01:08.000Z",
+    "creator": "AhaSignals",
+    "license": "CC BY 4.0",
+    "pageUrl": "https://ahasignals.com/filing-delta/nebius/revisions/2026-q2/",
+    "dataRoot": "https://ahasignals.com/data/filing-delta/nebius/revision-ledgers"
+  },
+  "subject": {
+    "company": "Nebius Group N.V.",
+    "ticker": "NBIS",
+    "cik": "0001513845",
+    "filerRegime": "foreign-private-issuer"
+  },
+  "researchQuestion": "Did selected Q2 and first-half 2025 statement-of-operations values change between the 2025 and 2026 SEC-filed quarterly exhibits?",
+  "completenessBoundary": {
+    "definition": "The 17 statement-of-operations rows reported for both the three and six months ended June 30, 2025 in both named SEC-filed exhibits.",
+    "selectedMetricCount": 17,
+    "matchedObservationCount": 34,
+    "changedObservationCount": 0,
+    "exclusions": [
+      "Per-share and share-count rows not present in the earlier exhibit table",
+      "Balance-sheet and cash-flow rows not presented in both selected exhibits",
+      "Non-GAAP measures",
+      "Narrative-only disclosures"
+    ]
+  },
+  "sourceChain": {
+    "priorExhibit": {
+      "form": "6-K Exhibit 99.1",
+      "accession": "0001104659-25-075028",
+      "acceptedAt": "2025-08-07T13:20:01.000Z",
+      "filedAt": "2025-08-07",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+      "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087"
+    },
+    "laterExhibit": {
+      "form": "6-K Exhibit 99.2",
+      "accession": "0001104659-26-094844",
+      "acceptedAt": "2026-08-12T20:01:08.000Z",
+      "filedAt": "2026-08-12",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+      "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c"
+    },
+    "submissions": {
+      "url": "https://data.sec.gov/submissions/CIK0001513845.json",
+      "retrievedAt": "2026-09-04",
+      "responseSha256": "5894bc694cc11c89ce4aca37112cc2b678b4662863a44f3af68297604c4ef02e"
+    }
+  },
+  "summary": {
+    "selectedMetricCount": 17,
+    "matchedObservationCount": 34,
+    "unchangedObservationCount": 34,
+    "changedObservationCount": 0
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entryId": "NBIS-2025-Q2-01",
+      "metricId": "revenue",
+      "label": "Revenues",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 105100000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:revenue",
+      "unit": "USD",
+      "priorState": {
+        "value": 105100000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 105100000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 2,
+      "entryId": "NBIS-2025-H1-01",
+      "metricId": "revenue",
+      "label": "Revenues",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 156000000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:revenue",
+      "unit": "USD",
+      "priorState": {
+        "value": 156000000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 156000000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 3,
+      "entryId": "NBIS-2025-Q2-02",
+      "metricId": "cost-of-revenues",
+      "label": "Cost of revenues",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 30100000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:cost-of-revenues",
+      "unit": "USD",
+      "priorState": {
+        "value": 30100000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 30100000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 4,
+      "entryId": "NBIS-2025-H1-02",
+      "metricId": "cost-of-revenues",
+      "label": "Cost of revenues",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 54800000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:cost-of-revenues",
+      "unit": "USD",
+      "priorState": {
+        "value": 54800000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 54800000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 5,
+      "entryId": "NBIS-2025-Q2-03",
+      "metricId": "product-development",
+      "label": "Product development",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 42800000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:product-development",
+      "unit": "USD",
+      "priorState": {
+        "value": 42800000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 42800000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 6,
+      "entryId": "NBIS-2025-H1-03",
+      "metricId": "product-development",
+      "label": "Product development",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 79300000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:product-development",
+      "unit": "USD",
+      "priorState": {
+        "value": 79300000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 79300000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 7,
+      "entryId": "NBIS-2025-Q2-04",
+      "metricId": "sales-general-administrative",
+      "label": "Sales, general and administrative",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 68200000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:sales-general-administrative",
+      "unit": "USD",
+      "priorState": {
+        "value": 68200000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 68200000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 8,
+      "entryId": "NBIS-2025-H1-04",
+      "metricId": "sales-general-administrative",
+      "label": "Sales, general and administrative",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 129100000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:sales-general-administrative",
+      "unit": "USD",
+      "priorState": {
+        "value": 129100000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 129100000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 9,
+      "entryId": "NBIS-2025-Q2-05",
+      "metricId": "depreciation-amortization",
+      "label": "Depreciation and amortization",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 75200000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:depreciation-amortization",
+      "unit": "USD",
+      "priorState": {
+        "value": 75200000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 75200000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 10,
+      "entryId": "NBIS-2025-H1-05",
+      "metricId": "depreciation-amortization",
+      "label": "Depreciation and amortization",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 124300000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:depreciation-amortization",
+      "unit": "USD",
+      "priorState": {
+        "value": 124300000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 124300000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 11,
+      "entryId": "NBIS-2025-Q2-06",
+      "metricId": "total-operating-costs-expenses",
+      "label": "Total operating costs and expenses",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 216300000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:total-operating-costs-expenses",
+      "unit": "USD",
+      "priorState": {
+        "value": 216300000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 216300000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 12,
+      "entryId": "NBIS-2025-H1-06",
+      "metricId": "total-operating-costs-expenses",
+      "label": "Total operating costs and expenses",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 387500000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:total-operating-costs-expenses",
+      "unit": "USD",
+      "priorState": {
+        "value": 387500000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 387500000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 13,
+      "entryId": "NBIS-2025-Q2-07",
+      "metricId": "loss-from-operations",
+      "label": "Loss from operations",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": -111200000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:loss-from-operations",
+      "unit": "USD",
+      "priorState": {
+        "value": -111200000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -111200000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 14,
+      "entryId": "NBIS-2025-H1-07",
+      "metricId": "loss-from-operations",
+      "label": "Loss from operations",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": -231500000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:loss-from-operations",
+      "unit": "USD",
+      "priorState": {
+        "value": -231500000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -231500000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 15,
+      "entryId": "NBIS-2025-Q2-08",
+      "metricId": "interest-income",
+      "label": "Interest income",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 3600000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:interest-income",
+      "unit": "USD",
+      "priorState": {
+        "value": 3600000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 3600000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 16,
+      "entryId": "NBIS-2025-H1-08",
+      "metricId": "interest-income",
+      "label": "Interest income",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 12100000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:interest-income",
+      "unit": "USD",
+      "priorState": {
+        "value": 12100000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 12100000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 17,
+      "entryId": "NBIS-2025-Q2-09",
+      "metricId": "interest-expense",
+      "label": "Interest expense",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": -4800000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:interest-expense",
+      "unit": "USD",
+      "priorState": {
+        "value": -4800000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -4800000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 18,
+      "entryId": "NBIS-2025-H1-09",
+      "metricId": "interest-expense",
+      "label": "Interest expense",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": -4800000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:interest-expense",
+      "unit": "USD",
+      "priorState": {
+        "value": -4800000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -4800000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 19,
+      "entryId": "NBIS-2025-Q2-10",
+      "metricId": "gain-revaluation-equity-securities",
+      "label": "Gain from revaluation of investment in equity securities",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 597400000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:gain-revaluation-equity-securities",
+      "unit": "USD",
+      "priorState": {
+        "value": 597400000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 597400000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 20,
+      "entryId": "NBIS-2025-H1-10",
+      "metricId": "gain-revaluation-equity-securities",
+      "label": "Gain from revaluation of investment in equity securities",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 597400000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:gain-revaluation-equity-securities",
+      "unit": "USD",
+      "priorState": {
+        "value": 597400000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 597400000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 21,
+      "entryId": "NBIS-2025-Q2-11",
+      "metricId": "equity-method-investments",
+      "label": "Income (loss) from equity method investments",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": -6300000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:equity-method-investments",
+      "unit": "USD",
+      "priorState": {
+        "value": -6300000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -6300000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 22,
+      "entryId": "NBIS-2025-H1-11",
+      "metricId": "equity-method-investments",
+      "label": "Income (loss) from equity method investments",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": -6200000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:equity-method-investments",
+      "unit": "USD",
+      "priorState": {
+        "value": -6200000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -6200000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 23,
+      "entryId": "NBIS-2025-Q2-12",
+      "metricId": "other-income-net",
+      "label": "Other income, net",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 24600000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:other-income-net",
+      "unit": "USD",
+      "priorState": {
+        "value": 24600000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 24600000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 24,
+      "entryId": "NBIS-2025-H1-12",
+      "metricId": "other-income-net",
+      "label": "Other income, net",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 32900000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:other-income-net",
+      "unit": "USD",
+      "priorState": {
+        "value": 32900000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 32900000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 25,
+      "entryId": "NBIS-2025-Q2-13",
+      "metricId": "income-before-tax",
+      "label": "Net income before income taxes",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 503300000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-before-tax",
+      "unit": "USD",
+      "priorState": {
+        "value": 503300000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 503300000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 26,
+      "entryId": "NBIS-2025-H1-13",
+      "metricId": "income-before-tax",
+      "label": "Net income before income taxes",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 399900000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-before-tax",
+      "unit": "USD",
+      "priorState": {
+        "value": 399900000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 399900000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 27,
+      "entryId": "NBIS-2025-Q2-14",
+      "metricId": "income-tax-expense",
+      "label": "Income tax expense",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 800000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-tax-expense",
+      "unit": "USD",
+      "priorState": {
+        "value": 800000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 800000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 28,
+      "entryId": "NBIS-2025-H1-14",
+      "metricId": "income-tax-expense",
+      "label": "Income tax expense",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 1700000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-tax-expense",
+      "unit": "USD",
+      "priorState": {
+        "value": 1700000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 1700000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 29,
+      "entryId": "NBIS-2025-Q2-15",
+      "metricId": "income-continuing-operations",
+      "label": "Net income from continuing operations",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 502500000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-continuing-operations",
+      "unit": "USD",
+      "priorState": {
+        "value": 502500000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 502500000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 30,
+      "entryId": "NBIS-2025-H1-15",
+      "metricId": "income-continuing-operations",
+      "label": "Net income from continuing operations",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 398200000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-continuing-operations",
+      "unit": "USD",
+      "priorState": {
+        "value": 398200000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 398200000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 31,
+      "entryId": "NBIS-2025-Q2-16",
+      "metricId": "income-discontinued-operations",
+      "label": "Net income from discontinued operations",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 81900000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-discontinued-operations",
+      "unit": "USD",
+      "priorState": {
+        "value": 81900000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 81900000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 32,
+      "entryId": "NBIS-2025-H1-16",
+      "metricId": "income-discontinued-operations",
+      "label": "Net income from discontinued operations",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 72700000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:income-discontinued-operations",
+      "unit": "USD",
+      "priorState": {
+        "value": 72700000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 72700000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 33,
+      "entryId": "NBIS-2025-Q2-17",
+      "metricId": "net-income",
+      "label": "Net income",
+      "period": "quarter",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30",
+      "value": 584400000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:net-income",
+      "unit": "USD",
+      "priorState": {
+        "value": 584400000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 584400000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 34,
+      "entryId": "NBIS-2025-H1-17",
+      "metricId": "net-income",
+      "label": "Net income",
+      "period": "year-to-date",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "value": 470900000,
+      "statement": "statement-of-operations",
+      "taxonomy": "issuer-table:net-income",
+      "unit": "USD",
+      "priorState": {
+        "value": 470900000,
+        "form": "6-K Exhibit 99.1",
+        "accession": "0001104659-25-075028",
+        "acceptedAt": "2025-08-07T13:20:01.000Z",
+        "filedAt": "2025-08-07",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_ex99-1.htm",
+        "documentSha256": "5e32ddb9b703330a0161796d770829ab75f75c183edea32d29d4d1410c197087",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 470900000,
+        "form": "6-K Exhibit 99.2",
+        "accession": "0001104659-26-094844",
+        "acceptedAt": "2026-08-12T20:01:08.000Z",
+        "filedAt": "2026-08-12",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm",
+        "documentSha256": "440449e9671dc8f744e7a9cbbac86384d6eacbfded9dc3c01c95613d64c31c4c",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": 0,
+        "absoluteDelta": 0,
+        "signChanged": false,
+        "classification": "unchanged-at-presented-precision"
+      },
+      "verification": {
+        "method": "dual-document-table-transcription-plus-arithmetic-check",
+        "result": "matched"
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    }
+  ],
+  "limitations": [
+    "Nebius is a foreign private issuer. This ledger uses financial statements furnished in Form 6-K exhibits, not domestic Form 10-Q inline XBRL.",
+    "Values are matched at the issuer-presented USD-million precision. Zero observed differences does not prove that no lower-precision source-system differences exist.",
+    "The scope is the common statement-of-operations table only; it does not claim that every comparative in the full filing package is unchanged.",
+    "Discontinued-operations presentation follows the issuer tables and should not be combined mechanically with continuing operations.",
+    "SEC acceptance timestamps establish public availability, not investor processing time.",
+    "Research and education only; not investment, trading, legal, accounting or tax advice."
+  ],
+  "citation": {
+    "text": "AhaSignals (2026). Nebius Accession-Level Point-in-Time Comparative Ledger — Q2 2026 Review (Version 1.0.0).",
+    "bibtexKey": "AhaSignals2026NebiusPITComparativeLedger"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving object key and array order, without whitespace.",
+    "payloadSha256": "937d697ea14fa9e4e04c7fb6f8fd662c56524e0b15830b7f26eb99ada834a715"
+  }
+}

@@ -1,0 +1,796 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaUrl": "https://ahasignals.com/data/filing-delta/revision-ledger-schema.json",
+  "artifact": {
+    "id": "crwv-revision-ledger-2026-q2-v1",
+    "title": "CoreWeave Q2 2026 Revision Ledger: Selected 2025 Comparative Filing Changes",
+    "pageUrl": "https://ahasignals.com/filing-delta/coreweave/revisions/2026-q2/",
+    "jsonUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.json",
+    "csvUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.csv",
+    "bibUrl": "https://ahasignals.com/data/filing-delta/coreweave/revision-ledgers/crwv-revision-ledger-2026-q2-v1.bib",
+    "publishedAt": "2026-08-29",
+    "knowledgeCutoff": "2026-08-29T13:32:00.000Z",
+    "license": "CC BY 4.0",
+    "creator": "AhaSignals",
+    "status": "frozen"
+  },
+  "subject": {
+    "company": "CoreWeave, Inc.",
+    "ticker": "CRWV",
+    "cik": "0001769628"
+  },
+  "question": "How did selected 2025 facts first filed in August 2025 differ when presented as comparatives in the August 2026 Form 10-Q?",
+  "summary": {
+    "entryCount": 14,
+    "roundingCompatibleCount": 10,
+    "presentationChangeCount": 4,
+    "issuerRestatementCount": 0,
+    "carriedForwardFromV1Count": 8,
+    "addedInV2Count": 6,
+    "removedInV2Count": 0
+  },
+  "filingComparison": {
+    "priorAccession": "0001769628-25-000041",
+    "priorAcceptedAt": "2025-08-12T22:18:48Z",
+    "priorFilingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+    "laterAccession": "0001769628-26-000366",
+    "laterAcceptedAt": "2026-08-11T23:24:42Z",
+    "laterFilingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+    "issuerContext": "The latest filing says certain prior-period amounts were reclassified to conform to the current-period presentation."
+  },
+  "researchReleaseComparison": {
+    "from": {
+      "releaseId": "crwv-memory-2026-08-29-v1",
+      "version": "1.0.0",
+      "url": "https://ahasignals.com/data/filing-delta/coreweave/releases/crwv-memory-2026-08-29-v1.json",
+      "sha256": "c70c0507cbc6683c77cce73f87177e8159603ccc9e481ebb5827959cc3aef82f",
+      "seriesCount": 8
+    },
+    "to": {
+      "releaseId": "crwv-memory-2026-08-29-v2",
+      "version": "1.1.0",
+      "url": "https://ahasignals.com/data/filing-delta/coreweave/releases/crwv-memory-2026-08-29-v2.json",
+      "sha256": "d037f6108632a2fa88cf708c78020ede2c527ba04d272bfbb66f250b3daf3360",
+      "seriesCount": 14
+    },
+    "meaning": "The release comparison records AhaSignals coverage changes. It is separate from the issuer filing comparison recorded in each entry."
+  },
+  "classificationPolicy": {
+    "roundingCompatible": "Absolute difference is at most 500,000 units and the later comparative is presented at whole-million precision.",
+    "presentationChange": "Difference fails the automatic rounding gate and was reviewed against the issuer disclosure. This label does not assert a formal restatement.",
+    "issuerRestatement": "Reserved for a change the issuer explicitly identifies as a restatement.",
+    "noSilentOverwrite": "Earlier filing values and earlier AhaSignals releases remain separately addressable."
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entryId": "revenue-h1-2025",
+      "identity": {
+        "label": "Revenue",
+        "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 2194420000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 2194000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -420000,
+        "absoluteDelta": 420000,
+        "relativeDelta": -0.00019139453705307096,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The $0.42 million difference is compatible with the later filing’s million-dollar presentation. It is not labeled here as a restatement.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 2,
+      "entryId": "operating-cash-flow-h1-2025",
+      "identity": {
+        "label": "Operating cash flow",
+        "taxonomy": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": -190083000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": -190000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 83000,
+        "absoluteDelta": 83000,
+        "relativeDelta": 0.00043665135756485325,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The later comparative value is consistent with rounding the first-reported value to the nearest million.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 3,
+      "entryId": "capex-h1-2025",
+      "identity": {
+        "label": "Purchases of property and equipment",
+        "taxonomy": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 3860351000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 3860000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -351000,
+        "absoluteDelta": 351000,
+        "relativeDelta": -0.00009092437449340746,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The $0.351 million difference is compatible with the later filing’s million-dollar presentation.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 4,
+      "entryId": "sbc-h1-2025",
+      "identity": {
+        "label": "Stock-based compensation",
+        "taxonomy": "us-gaap:ShareBasedCompensation",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 328978000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 329000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 22000,
+        "absoluteDelta": 22000,
+        "relativeDelta": 0.00006687377271428485,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The later filing presents the same period at lower precision; the difference is $0.022 million.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 5,
+      "entryId": "diluted-shares-h1-2025",
+      "identity": {
+        "label": "Diluted weighted-average shares",
+        "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "unit": "shares",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 368607000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 369000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 393000,
+        "absoluteDelta": 393000,
+        "relativeDelta": 0.0010661761713695074,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "The later filing rounds the weighted-average share count to the nearest million shares.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 6,
+      "entryId": "ipo-proceeds-h1-2025",
+      "identity": {
+        "label": "IPO proceeds, net of underwriting discounts and commissions",
+        "taxonomy": "us-gaap:ProceedsFromIssuanceInitialPublicOffering",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 1422619000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 1491000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 68381000,
+        "absoluteDelta": 68381000,
+        "relativeDelta": 0.0480669806884345,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The $68.381 million increase is larger than a rounding effect. The later filing is the source for the changed comparative amount; this record does not infer a formal restatement.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "fail"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 7,
+      "entryId": "debt-proceeds-h1-2025",
+      "identity": {
+        "label": "Proceeds from issuance of debt",
+        "taxonomy": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 4432723000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 4396000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -36723000,
+        "absoluteDelta": 36723000,
+        "relativeDelta": -0.008284523982211385,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The later comparative amount is $36.723 million lower and its filing label adds “net.” Treat the two values as separate filed versions.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "fail"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 8,
+      "entryId": "other-investing-h1-2025",
+      "identity": {
+        "label": "Other investing activities",
+        "taxonomy": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 26109000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": -6000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -32109000,
+        "absoluteDelta": 32109000,
+        "relativeDelta": -1.2298058140870964,
+        "signChanged": true
+      },
+      "classification": {
+        "value": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The XBRL value changes from positive $26.109 million to negative $6 million. The two accessions are preserved because the sign and amount both changed.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "fail"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "carried-forward",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v1"
+      }
+    },
+    {
+      "sequence": 9,
+      "entryId": "cost-of-revenue-2025-01-01-2025-06-30",
+      "identity": {
+        "label": "Cost of revenue",
+        "taxonomy": "us-gaap:CostOfGoodsAndServicesSold",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 575061000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 575000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -61000,
+        "absoluteDelta": 61000,
+        "relativeDelta": -0.00010607570327321797,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "added-in-v2",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v2"
+      }
+    },
+    {
+      "sequence": 10,
+      "entryId": "cost-of-revenue-2025-04-01-2025-06-30",
+      "identity": {
+        "label": "Cost of revenue",
+        "taxonomy": "us-gaap:CostOfGoodsAndServicesSold",
+        "unit": "USD",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 312667000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 313000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 333000,
+        "absoluteDelta": 333000,
+        "relativeDelta": 0.0010650308475150879,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "added-in-v2",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v2"
+      }
+    },
+    {
+      "sequence": 11,
+      "entryId": "operating-income-loss-2025-01-01-2025-06-30",
+      "identity": {
+        "label": "Operating income (loss)",
+        "taxonomy": "us-gaap:OperatingIncomeLoss",
+        "unit": "USD",
+        "periodStart": "2025-01-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": -8261000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": -8000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 261000,
+        "absoluteDelta": 261000,
+        "relativeDelta": 0.03159423798571601,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "added-in-v2",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v2"
+      }
+    },
+    {
+      "sequence": 12,
+      "entryId": "operating-income-loss-2025-04-01-2025-06-30",
+      "identity": {
+        "label": "Operating income (loss)",
+        "taxonomy": "us-gaap:OperatingIncomeLoss",
+        "unit": "USD",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 19209000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 19000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -209000,
+        "absoluteDelta": 209000,
+        "relativeDelta": -0.010880316518298714,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "added-in-v2",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v2"
+      }
+    },
+    {
+      "sequence": 13,
+      "entryId": "revenue-2025-04-01-2025-06-30",
+      "identity": {
+        "label": "Revenue",
+        "taxonomy": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "unit": "USD",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 1212788000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 1212000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": -788000,
+        "absoluteDelta": 788000,
+        "relativeDelta": -0.0006497425766086076,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "presentation-change",
+        "authority": "human-reviewed",
+        "interpretation": "The later filing presents $1,212 million for the quarter first reported as $1,212.788 million. The difference exceeds standard nearest-million rounding. The issuer says some prior-period amounts may differ by insignificant amounts after changing presentation from thousands to millions; this record preserves both versions and does not infer a formal restatement.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "fail"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "added-in-v2",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v2"
+      }
+    },
+    {
+      "sequence": 14,
+      "entryId": "diluted-weighted-average-shares-2025-04-01-2025-06-30",
+      "identity": {
+        "label": "Diluted weighted-average shares",
+        "taxonomy": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "unit": "shares",
+        "periodStart": "2025-04-01",
+        "periodEnd": "2025-06-30"
+      },
+      "filingComparison": {
+        "priorVersion": {
+          "value": 486591000,
+          "accession": "0001769628-25-000041",
+          "form": "10-Q",
+          "filedAt": "2025-08-13",
+          "acceptedAt": "2025-08-12T22:18:48.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
+          "role": "first-reported",
+          "reportedPrecision": "thousand"
+        },
+        "laterComparative": {
+          "value": 487000000,
+          "accession": "0001769628-26-000366",
+          "form": "10-Q",
+          "filedAt": "2026-08-12",
+          "acceptedAt": "2026-08-11T23:24:42.000Z",
+          "filingUrl": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+          "role": "later-comparative",
+          "reportedPrecision": "million"
+        },
+        "delta": 409000,
+        "absoluteDelta": 409000,
+        "relativeDelta": 0.000840541645858637,
+        "signChanged": false
+      },
+      "classification": {
+        "value": "rounding-compatible",
+        "authority": "automatic-rule",
+        "interpretation": "Difference is within $0.5 million (or 0.5 million shares) and the later value is presented at million precision.",
+        "roundingGate": {
+          "threshold": 500000,
+          "laterValueAtMillionPrecision": true,
+          "result": "pass"
+        }
+      },
+      "researchReleaseScope": {
+        "status": "added-in-v2",
+        "firstIncludedReleaseId": "crwv-memory-2026-08-29-v2"
+      }
+    }
+  ],
+  "limitations": [
+    "The ledger covers selected facts with matched taxonomy, unit and exact period identity; it is not a complete reconstruction of either filing.",
+    "A different comparative value is not automatically an error or a formal restatement.",
+    "The rounding gate is a conservative classification rule, not an accounting materiality judgment.",
+    "SEC acceptance timestamps establish public availability; they do not establish when every market participant processed the information.",
+    "The ledger is research-only and does not provide investment, trading, legal, accounting or tax advice."
+  ],
+  "citation": {
+    "text": "AhaSignals. “CoreWeave Q2 2026 Revision Ledger: Selected 2025 Comparative Filing Changes.” crwv-revision-ledger-2026-q2-v1, published 2026-08-29. https://ahasignals.com/filing-delta/coreweave/revisions/2026-q2/",
+    "bibtexKey": "AhaSignals2026CoreWeaveRevisionLedger"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving the published object key and array order, without whitespace.",
+    "payloadSha256": "16e2faa2f12baaa3e9c868cda2c0d1659e2bce3e4d17a427327ca07e8da89064"
+  }
+}

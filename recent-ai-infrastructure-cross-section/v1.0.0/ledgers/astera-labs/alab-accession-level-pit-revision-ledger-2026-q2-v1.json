@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0.0",
+  "schemaUrl": "https://ahasignals.com/data/filing-delta/accession-comparative-ledger-schema.json",
+  "artifact": {
+    "id": "alab-accession-level-pit-revision-ledger-2026-q2-v1",
+    "title": "Astera Labs Accession-Level Point-in-Time Revision Ledger — Q2 2026 Comparative Review",
+    "version": "1.0.0",
+    "status": "frozen",
+    "publishedAt": "2026-09-05",
+    "knowledgeCutoff": "2026-08-04T21:34:14.000Z",
+    "creator": "AhaSignals",
+    "license": "CC BY 4.0",
+    "pageUrl": "https://ahasignals.com/filing-delta/astera-labs/revisions/2026-q2/",
+    "dataRoot": "https://ahasignals.com/data/filing-delta/astera-labs/revision-ledgers"
+  },
+  "subject": {
+    "company": "Astera Labs, Inc.",
+    "ticker": "ALAB",
+    "cik": "0001736297",
+    "filerRegime": "domestic-issuer"
+  },
+  "researchQuestion": "Which Company Facts API value differences survive primary-filing context review between the Q2 2025 and Q2 2026 Form 10-Q accessions?",
+  "completenessBoundary": {
+    "definition": "Every SEC Company Facts observation sharing namespace, taxonomy concept, unit, start date and end date across the two named accessions, followed by primary-filing context review for every value difference.",
+    "exactIdentityMatchCount": 83,
+    "unchangedCount": 81,
+    "apiValueDifferenceCount": 2,
+    "confirmedComparativeChangeCount": 1,
+    "exclusions": [
+      "Dimensionally different contexts",
+      "Facts absent from either named accession in SEC Company Facts",
+      "Narrative-only disclosures"
+    ]
+  },
+  "sourceChain": {
+    "priorFiling": {
+      "form": "10-Q",
+      "accession": "0001736297-25-000098",
+      "acceptedAt": "2025-08-05T21:41:47.000Z",
+      "filedAt": "2025-08-06",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629725000098/alab-20250630.htm",
+      "documentSha256": "9c8e831d1a0b0ccf08935565dba286ccab416c32960ff31744ed6473069350ee"
+    },
+    "laterFiling": {
+      "form": "10-Q",
+      "accession": "0001736297-26-000035",
+      "acceptedAt": "2026-08-04T21:34:14.000Z",
+      "filedAt": "2026-08-05",
+      "filingUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm",
+      "documentSha256": "766a9309bf6a9ff65c4ae778080dc8fbea11cc427275a7b4e5355023bb74aee6"
+    },
+    "companyFacts": {
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001736297.json",
+      "retrievedAt": "2026-09-04",
+      "responseSha256": "2efb6a6e035970ca24ce4f04e2fcadd1f30fee9646b46e5d97c6ed652376663b"
+    },
+    "submissions": {
+      "url": "https://data.sec.gov/submissions/CIK0001736297.json",
+      "retrievedAt": "2026-09-04",
+      "responseSha256": "4aac0a8100811703349124ff7f7941a001d3094a74e2a0593400d3032caee7c1"
+    }
+  },
+  "summary": {
+    "matchedFactCount": 83,
+    "unchangedFactCount": 81,
+    "apiValueDifferenceCandidateCount": 2,
+    "confirmedComparativeChangeCount": 1,
+    "contextCollisionCount": 1,
+    "issuerDisclosedReclassificationCount": 1,
+    "issuerRestatementCount": 0
+  },
+  "entries": [
+    {
+      "sequence": 1,
+      "entryId": "ALAB-Q2-2025-YTD-DA",
+      "statement": "company-facts-candidate",
+      "label": "Depreciation and amortization",
+      "taxonomy": "us-gaap:DepreciationDepletionAndAmortization",
+      "unit": "USD",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "priorValue": 2517000,
+      "laterValue": 2500000,
+      "classification": "context-collision-not-a-revision",
+      "authority": "primary-filing-context-review",
+      "interpretation": "This is an API-key collision, not a financial revision. The later filing uses this taxonomy in a rounded note disclosure (USD 2.5 million), while its primary cash-flow statement reports the unchanged USD 2.517 million value under us-gaap:DepreciationAndAmortization.",
+      "resolution": {
+        "primaryStatementPriorValue": 2517000,
+        "primaryStatementLaterValue": 2517000,
+        "laterPrimaryStatementTaxonomy": "us-gaap:DepreciationAndAmortization",
+        "financialValueChanged": false
+      },
+      "priorState": {
+        "value": 2517000,
+        "form": "10-Q",
+        "accession": "0001736297-25-000098",
+        "acceptedAt": "2025-08-05T21:41:47.000Z",
+        "filedAt": "2025-08-06",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629725000098/alab-20250630.htm",
+        "documentSha256": "9c8e831d1a0b0ccf08935565dba286ccab416c32960ff31744ed6473069350ee",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": 2500000,
+        "form": "10-Q",
+        "accession": "0001736297-26-000035",
+        "acceptedAt": "2026-08-04T21:34:14.000Z",
+        "filedAt": "2026-08-05",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm",
+        "documentSha256": "766a9309bf6a9ff65c4ae778080dc8fbea11cc427275a7b4e5355023bb74aee6",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": -17000,
+        "absoluteDelta": 17000,
+        "signChanged": false
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    },
+    {
+      "sequence": 2,
+      "entryId": "ALAB-Q2-2025-YTD-ACCRUED-LIABILITIES",
+      "statement": "statement-of-cash-flows",
+      "label": "Accrued expenses and other liabilities",
+      "taxonomy": "us-gaap:IncreaseDecreaseInAccruedLiabilitiesAndOtherOperatingLiabilities",
+      "unit": "USD",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-06-30",
+      "priorValue": -1592000,
+      "laterValue": -3555000,
+      "classification": "issuer-disclosed-reclassification",
+      "authority": "issuer-disclosure-plus-human-review",
+      "interpretation": "The issuer states that certain prior-period balances were reclassified to conform to current presentation and that the reclassifications did not affect reported net income, balance sheets or cash flows.",
+      "priorState": {
+        "value": -1592000,
+        "form": "10-Q",
+        "accession": "0001736297-25-000098",
+        "acceptedAt": "2025-08-05T21:41:47.000Z",
+        "filedAt": "2025-08-06",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629725000098/alab-20250630.htm",
+        "documentSha256": "9c8e831d1a0b0ccf08935565dba286ccab416c32960ff31744ed6473069350ee",
+        "sourceRole": "first-reported"
+      },
+      "laterState": {
+        "value": -3555000,
+        "form": "10-Q",
+        "accession": "0001736297-26-000035",
+        "acceptedAt": "2026-08-04T21:34:14.000Z",
+        "filedAt": "2026-08-05",
+        "filingUrl": "https://www.sec.gov/Archives/edgar/data/1736297/000173629726000035/alab-20260630.htm",
+        "documentSha256": "766a9309bf6a9ff65c4ae778080dc8fbea11cc427275a7b4e5355023bb74aee6",
+        "sourceRole": "later-comparative"
+      },
+      "change": {
+        "delta": -1963000,
+        "absoluteDelta": 1963000,
+        "signChanged": false
+      },
+      "pointInTimePolicy": {
+        "beforeLaterFiling": "Use only the value from the earlier accession when its SEC acceptance time is on or before the decision time.",
+        "afterLaterFiling": "The later comparative becomes eligible only from the later filing acceptance timestamp; retain both accession-scoped values.",
+        "noSilentOverwrite": "Never replace the earlier accession value in place."
+      }
+    }
+  ],
+  "issuerDisclosure": "Certain prior period balances were reclassified to conform to the current period’s presentation. The issuer states these reclassifications did not affect reported net income, balance sheets or cash flows for the periods presented.",
+  "limitations": [
+    "This ledger is complete only within its Company Facts key intersection and primary-filing review of the two API value differences; it is not a reconstruction of every filing context.",
+    "A changed comparative is not automatically an accounting error or formal restatement.",
+    "The rounding classification is a display-precision finding, not an accounting materiality conclusion.",
+    "SEC acceptance timestamps establish public availability, not investor processing time.",
+    "Research and education only; not investment, trading, legal, accounting or tax advice."
+  ],
+  "citation": {
+    "text": "AhaSignals (2026). Astera Labs Accession-Level Point-in-Time Revision Ledger — Q2 2026 Comparative Review (Version 1.0.0).",
+    "bibtexKey": "AhaSignals2026AsteraLabsPITRevisionLedger"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "canonicalization": "UTF-8 JSON.stringify(payload), preserving object key and array order, without whitespace.",
+    "payloadSha256": "7c311ab088972e653fd385ef2b1f65773156ccb48c70676f31c219d6002c42d6"
+  }
+}

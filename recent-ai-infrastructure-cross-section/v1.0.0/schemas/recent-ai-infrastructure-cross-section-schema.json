@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahasignals.com/data/filing-delta/recent-ai-infrastructure-cross-section/schema.json",
+  "title": "AhaSignals Recent AI Infrastructure Filing Cross-Section",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "schemaUrl",
+    "artifact",
+    "researchQuestion",
+    "contract",
+    "metricDefinitions",
+    "rows",
+    "findings",
+    "limitations",
+    "citation",
+    "integrity"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "schemaUrl": {
+      "const": "https://ahasignals.com/data/filing-delta/recent-ai-infrastructure-cross-section/schema.json"
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "version",
+        "status",
+        "publishedAt",
+        "knowledgeCutoff",
+        "creator",
+        "license",
+        "pageUrl",
+        "jsonUrl",
+        "csvUrl"
+      ]
+    },
+    "researchQuestion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "contract": {
+      "type": "object",
+      "required": [
+        "decisionRule",
+        "periodRule",
+        "missingDataRule",
+        "rankingRule",
+        "tierDefinitions"
+      ]
+    },
+    "metricDefinitions": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "issuerId",
+          "company",
+          "ticker",
+          "cik",
+          "role",
+          "filerRegime",
+          "fiscalPeriod",
+          "periodEnd",
+          "source",
+          "metrics"
+        ],
+        "properties": {
+          "issuerId": {
+            "type": "string"
+          },
+          "company": {
+            "type": "string"
+          },
+          "ticker": {
+            "type": "string"
+          },
+          "cik": {
+            "type": "string",
+            "pattern": "^[0-9]{10}$"
+          },
+          "role": {
+            "type": "string"
+          },
+          "filerRegime": {
+            "enum": [
+              "domestic-issuer",
+              "foreign-private-issuer"
+            ]
+          },
+          "fiscalPeriod": {
+            "type": "string"
+          },
+          "periodEnd": {
+            "type": "string",
+            "format": "date"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "accession",
+              "acceptedAt",
+              "form",
+              "url"
+            ]
+          },
+          "metrics": {
+            "type": "object",
+            "minProperties": 6,
+            "maxProperties": 6,
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "value",
+                "priorValue",
+                "comparabilityTier",
+                "formula",
+                "inputs",
+                "note"
+              ],
+              "properties": {
+                "value": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "priorValue": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "comparabilityTier": {
+                  "enum": [
+                    "A",
+                    "B",
+                    "C"
+                  ]
+                },
+                "formula": {
+                  "type": "string"
+                },
+                "inputs": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "number"
+                  }
+                },
+                "note": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string"
+      }
+    },
+    "citation": {
+      "type": "object",
+      "required": [
+        "text",
+        "bibtexKey"
+      ]
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "canonicalization",
+        "payloadSha256"
+      ]
+    }
+  }
+}

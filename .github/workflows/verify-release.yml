@@ -26,3 +26,5 @@ jobs:
         run: ./bigbear-ai-revision-ledger/v1/verify-ledger.sh
       - name: Verify CoreWeave later-comparatives case study v1
         run: ./case-studies/coreweave-later-comparatives-v1/verify-case-study.sh
+      - name: Verify recent AI infrastructure filing cross-section v1
+        run: ./recent-ai-infrastructure-cross-section/v1.0.0/verify-release.sh
